@@ -17,4 +17,6 @@ Use `program-pal-initial-assessment` when working from client intake forms, init
 
 Use `program-pal-program-design` after assessment context is available and before creating the final workout workbook. This skill creates the Program Blueprint.
 
+Use `program-pal-exercise-selection` when choosing, verifying, substituting, regressing, progressing, or explaining exercises inside a Program Pal workout.
+
 Use `personal-training-workbook-format` when creating or formatting final Excel workout-program workbooks.

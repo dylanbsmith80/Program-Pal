@@ -1,0 +1,7 @@
+interface:
+  display_name: "Program Pal Exercise Selection"
+  short_description: "Choose and verify client-specific exercises"
+  default_prompt: "Use $program-pal-exercise-selection to choose safe, verified exercises for this client program."
+
+policy:
+  allow_implicit_invocation: true
