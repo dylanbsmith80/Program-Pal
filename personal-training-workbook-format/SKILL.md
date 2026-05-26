@@ -9,6 +9,12 @@ Use this skill when creating Excel workout programs for personal training client
 
 Every client's workout content can be different. Preserve the visual workbook system while adapting the sheet count, session count, section labels, and table headers to the client's actual program.
 
+## Reference Asset
+
+Use `assets/generic-workout-format-reference.xlsx` as the visual formatting reference for this skill when a concrete example is useful.
+
+This workbook contains generic placeholder programming only. Use it to inspect layout, color usage, row heights, column widths, merged header bands, session block rhythm, and flexible table structures. Do not copy its workout content, exercise choices, session count, or program structure unless the user's requested program actually calls for something similar.
+
 ## Workbook Structure
 
 Create one workbook with:
