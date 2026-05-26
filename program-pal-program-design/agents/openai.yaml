@@ -1,0 +1,7 @@
+interface:
+  display_name: "Program Pal Program Design"
+  short_description: "Create client-specific program blueprints"
+  default_prompt: "Use $program-pal-program-design to create a client-specific training program blueprint."
+
+policy:
+  allow_implicit_invocation: true

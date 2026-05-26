@@ -15,4 +15,6 @@ Before designing features, writing prompts, creating workout-program logic, or c
 
 Use `program-pal-initial-assessment` when working from client intake forms, initial assessment notes, fitness test results, FMS/posture notes, SMART goals, or fitness-goal questionnaires.
 
+Use `program-pal-program-design` after assessment context is available and before creating the final workout workbook. This skill creates the Program Blueprint.
+
 Use `personal-training-workbook-format` when creating or formatting final Excel workout-program workbooks.
