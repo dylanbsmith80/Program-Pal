@@ -22,3 +22,5 @@ Use `program-pal-program-design` after assessment context is available and befor
 Use `program-pal-exercise-selection` when choosing, verifying, substituting, regressing, progressing, or explaining exercises inside a Program Pal workout.
 
 Use `personal-training-workbook-format` when creating or formatting final Excel workout-program workbooks.
+
+Use `program-pal-onedrive-storage` when storing assessment forms or finished workout programs in the trainer's local OneDrive Training Pal folder.

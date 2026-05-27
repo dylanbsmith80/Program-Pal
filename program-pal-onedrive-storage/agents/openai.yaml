@@ -1,0 +1,7 @@
+interface:
+  display_name: "Program Pal OneDrive Storage"
+  short_description: "Store client files in OneDrive folders"
+  default_prompt: "Use $program-pal-onedrive-storage to store this assessment or workout program in the client's OneDrive folder."
+
+policy:
+  allow_implicit_invocation: true
