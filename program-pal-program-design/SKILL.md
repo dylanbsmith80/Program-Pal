@@ -54,6 +54,7 @@ Place the most challenging, highest-priority work early in the session while the
 Use these ordering principles:
 
 - Warm-up, dynamic mobility, activation, and prep work come first.
+- Warm-ups should include 1-2 additional movements that specifically prepare the client for the main workout.
 - Heavy, high-skill, high-energy, or multi-joint movements usually come early in the workout.
 - Accessory movements usually come later in the workout.
 - Cardio or conditioning may come early when it is the highest-priority or most challenging work and the session does not include especially heavy lifting.
@@ -63,6 +64,27 @@ Use these ordering principles:
 - Exercises addressing medical circumstances, limitations, pain points, or client-specific needs may be placed anywhere if there is a clear reason for the placement.
 
 Do not add corrective or mobility work as random filler. Its placement should have a reason.
+
+## Warm-Up Specificity
+
+Warm-ups should not be generic. In addition to general dynamic stretching or light mobility, include 1-2 movements that directly prepare the client for the main workout.
+
+Choose these movements based on:
+
+- The session goal
+- The first major workout movement
+- The client's assessment findings
+- The client's limitations or safety flags
+- The movement patterns that will be trained
+
+Examples:
+
+- Before a squat-focused workout, include hip, ankle, or squat-pattern prep.
+- Before an upper-body pulling workout, include scapular control or thoracic mobility prep.
+- Before conditioning without heavy lifting, include progressively faster movement prep that matches the conditioning mode.
+- Before core-skill work, include breathing, bracing, or trunk-control prep.
+
+For 30-minute sessions, keep these movements brief and highly targeted. For 60-minute sessions, the warm-up may include a fuller prep sequence when it improves the main workout.
 
 ## Split Selection
 

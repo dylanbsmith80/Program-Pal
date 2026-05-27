@@ -55,7 +55,7 @@ Each session must include:
 - Session name
 - Overarching session goal
 - Short rationale
-- Warm Up focus
+- Warm Up focus, including 1-2 movements that specifically prepare the main workout
 - Workout focus
 - Cooldown focus
 
@@ -68,6 +68,8 @@ Every session must follow:
 3. Cooldown
 
 The contents inside each section should be determined by the assessment, not by a fixed template.
+
+Warm-ups should include dynamic stretching or light mobility plus 1-2 specific prep movements tied to the session goal, first major workout movement, or client assessment findings.
 
 ### Exercise Selection Logic
 
