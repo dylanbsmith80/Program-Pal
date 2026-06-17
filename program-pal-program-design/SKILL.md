@@ -38,6 +38,8 @@ If program duration is missing and no SMART goal timeline is available, ask for 
 
 Do not create a final workbook until the blueprint has enough information to support a safe, specific program.
 
+If the assessment brief includes confidence scores, respect them as source-certainty signals. Required readiness information must satisfy the `program-pal-intake-questions` confidence thresholds before blueprint creation.
+
 ## Program Structure Rules
 
 Every session must follow this top-level structure:
@@ -147,6 +149,10 @@ For pain, movement-quality, mobility, or skill goals, progression may mean bette
 
 Respect all safety flags from the assessment brief.
 
+Respect confidence notes attached to assessment findings. Do not build aggressive loading, intensity, range-of-motion, volume, or progression decisions from confidence `1 Unusable`, `2 Low`, or `3 Medium` safety data.
+
+If safety-critical data is below confidence `4 High`, ask for clarification before design unless the trainer explicitly approves conservative assumptions. Conservative assumptions must be named in the blueprint and should bias toward pain-free ranges, lower complexity, lower intensity, slower progression, and easy substitutions.
+
 If a movement causes pain or conflicts with a known limitation, regress, modify, substitute, or ask for more information.
 
 Use client preferences when possible. Avoid disliked exercises unless there is a strong programming reason, and explain that reason.
@@ -161,6 +167,7 @@ The blueprint should make it clear:
 - What each session is trying to accomplish
 - How the program supports the client's goals
 - What safety constraints shape the plan
+- Which uncertain safety or readiness findings shaped conservative choices, if any
 - What should be tracked to judge progress
 
 After the blueprint is complete and safe enough to proceed, use `personal-training-workbook-format` to create or format the final Excel workout workbook.

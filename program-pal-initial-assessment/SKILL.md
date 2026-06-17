@@ -18,7 +18,7 @@ For the assessment template fields and expected sections, read `references/initi
 When given an assessment, intake response, notes from an initial session, or a partially completed assessment:
 
 1. Extract the client's known information.
-2. Separate facts from assumptions.
+2. Separate facts from assumptions and score the source confidence for each important finding.
 3. Identify safety flags and programming constraints.
 4. Identify missing information that matters before programming.
 5. Summarize the client's goals, preferences, and training context.
@@ -35,10 +35,31 @@ Use the most reliable available method:
 
 1. Try extracting text, form fields, and annotations.
 2. If important answers are missing, render the pages and inspect the visual content.
-3. If handwriting or marks are unclear, record the value as uncertain and ask the trainer to confirm it.
+3. If handwriting or marks are unclear, score the finding with low or medium confidence, record the uncertainty, and ask the trainer to confirm it when it affects safety or required programming readiness.
 4. Do not invent missing assessment answers.
 
 When the file appears blank through text extraction but filled visually, treat the rendered pages as the source of truth.
+
+## Confidence Scoring
+
+Every important extracted finding must include a source-confidence score. Confidence measures only how sure Program Pal is that the source says the extracted value. It does not measure whether the value is clinically important, complete, or sufficient for programming.
+
+Use this scale:
+
+- `Confidence: 5 Very High` for typed text, form-field data, a clear checkbox, or a clearly legible value.
+- `Confidence: 4 High` for readable visual or handwritten data with minor ambiguity that does not change the meaning.
+- `Confidence: 3 Medium` for a likely value when handwriting, scan quality, conflicting context, or inference creates real doubt.
+- `Confidence: 2 Low` for a possible value that is unclear enough that using it could change programming.
+- `Confidence: 1 Unusable` for data that is blank, illegible, cropped, contradictory without resolution, or not actually present.
+
+Treat findings by score:
+
+- `5 Very High` and `4 High`: Use normally in the assessment summary and programming implications.
+- `3 Medium`: Use cautiously. Include an `Uncertainty:` note and do not let it drive high-risk programming alone.
+- `2 Low`: Do not treat as settled. Include an `Uncertainty:` note and ask for clarification if it affects safety or required programming readiness.
+- `1 Unusable`: Treat as missing. Include an `Uncertainty:` note when useful, ask for clarification if the field is required, and omit it from programming decisions otherwise.
+
+Required programming-readiness fields must be confidence `3 Medium` or higher to count as known. Safety-critical findings involving pain, injury, medical concerns, contraindications, or major limitations must be confidence `4 High` or higher to proceed without clarification.
 
 ## Assessment Domains
 
@@ -114,7 +135,7 @@ Translate assessment data into practical programming implications.
 
 Use this pattern:
 
-- **Finding:** What the assessment says.
+- **Finding:** What the assessment says, with inline confidence.
 - **Meaning:** Why it matters for training.
 - **Programming implication:** How it should influence the plan.
 
@@ -125,6 +146,7 @@ Examples:
 - If the client has a short-term goal with a deadline, structure the cycle around measurable progress markers.
 - If the client dislikes certain exercises, avoid them unless there is a strong reason and provide a trainer-facing rationale.
 - If the client has high sedentary time, consider mobility, posture, aerobic base, and gradual work-capacity progression.
+- If a programming implication depends on confidence `1-3` source data, name that confidence in the implication and choose a conservative action until clarified.
 
 ## Output Format
 
@@ -142,6 +164,21 @@ When processing assessment information, produce a programming brief with these s
 
 Keep the brief practical and trainer-facing. The brief should help the trainer quickly understand what matters before building the program.
 
+Use compact inline confidence for important findings:
+
+```text
+- Knee pain: Reports right knee pain during squats. Confidence: 3 Medium. Uncertainty: Handwritten side marker appears to be "R," but is unclear.
+- Sessions per week: 3. Confidence: 5 Very High.
+```
+
+Include `Uncertainty:` only when confidence is `1 Unusable`, `2 Low`, or `3 Medium`.
+
+For `Programming Implications`, include confidence only when the implication depends on uncertain source data:
+
+```text
+- Use conservative squat progressions until knee pain side is confirmed. Based on confidence 3 knee-pain note.
+```
+
 ## Privacy Rules
 
 Client assessment information is private. Do not expose one client's details to another client, another user, or public-facing output.
@@ -158,5 +195,7 @@ After assessment interpretation, Program Pal may create the workout program only
 - Equipment access is known.
 - Program duration or cycle length is known.
 - Major pain, injury, or medical concerns have been addressed.
+
+Required programming-readiness fields with confidence `1 Unusable` or `2 Low` do not count as known. Safety-critical findings with confidence `1-3` must be clarified before program design proceeds unless the trainer explicitly approves conservative assumptions.
 
 When ready to build the workout workbook, combine this assessment brief with the Program Pal constitution in `PROGRAM_PAL_AGENT_OBJECTIVES.md` and the formatting rules in `personal-training-workbook-format`.
