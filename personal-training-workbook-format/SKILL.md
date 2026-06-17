@@ -234,3 +234,22 @@ Before finalizing:
 - Confirm merged title, subtitle, session, warm-up/prep, and section rows are consistent.
 - Confirm the workbook does not contain empty blocks copied from another template.
 - Confirm the format works for the actual client program structure, regardless of workout type.
+
+## Final Workbook Inspection Gate
+
+Before delivering, uploading, or reporting a finished `.xlsx` workout workbook as complete, open or render the generated workbook when possible and inspect the final visual result.
+
+The final inspection should confirm:
+
+- The workbook opens without errors.
+- The expected sheets are present and correctly named.
+- The `Overview & Rationale` sheet appears first when included.
+- Headers, merged cells, colors, borders, row heights, and column widths render as intended.
+- Long text is wrapped, readable, and not clipped.
+- Training sheets remain print-friendly, landscape-oriented, and fit to one page wide.
+- No empty template blocks, stale placeholder content, or copied generic workout content remain.
+- The inspected file is the same file that will be delivered or uploaded.
+
+If a local spreadsheet app, render tool, or reliable preview workflow is unavailable, perform the strongest available fallback inspection by programmatically checking workbook sheets, dimensions, merged ranges, print settings, and representative cell values. State that visual rendering was unavailable and summarize the fallback checks completed.
+
+Do not upload a generated workout workbook to Google Drive until this final inspection gate has passed or the trainer explicitly approves skipping it.
