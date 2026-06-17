@@ -114,6 +114,32 @@ If a file with the same name already exists:
 - Do not overwrite it silently.
 - Ask whether to replace it, keep both, or create a versioned file name.
 
+## Post-Upload Report
+
+After uploading or copying any assessment or workout program to Google Drive, report the result in a consistent receipt format.
+
+Include:
+
+- Drive folder: the final folder path, such as `Program pal/DylanS`.
+- Uploaded file name: the exact file name now visible in Drive.
+- Link: the Google Drive file link when available, or state `Unavailable` if the connector or browser flow cannot provide one.
+- Duplicate status: state whether no duplicate was found, an existing file was replaced, both files were kept, a versioned name was created, or upload was skipped because the trainer declined a duplicate action.
+- Local copy preserved: state `Yes`, `No`, or `Not applicable`, and mention the local path when useful.
+
+Use this format:
+
+```text
+Drive Upload Complete
+
+Drive folder: Program pal/ClientFolder
+Uploaded file: YYYY-MM-DD Program - ClientFolder - Program Label.xlsx
+Link: https://drive.google.com/...
+Duplicate status: No duplicate found; uploaded as a new file.
+Local copy preserved: Yes
+```
+
+If upload fails or is blocked, use the same fields where possible and clearly state the failure reason instead of reporting completion.
+
 ## Privacy Rules
 
 Client folders and files may contain private client information.
