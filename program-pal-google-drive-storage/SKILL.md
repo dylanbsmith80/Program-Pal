@@ -19,6 +19,8 @@ The target root folder in Google Drive is:
 
 Storage must always use the Google Drive account that is currently authenticated in the running user's connector or browser session. Do not use hardcoded Google Drive folder IDs, account-specific URLs, shared links, saved browser sessions from another user, or another trainer's authenticated Drive context.
 
+If the authenticated user's Google Drive does not already contain a root-level folder named `Program pal`, create the `Program pal` folder in that user's My Drive root before creating client folders or uploading files.
+
 If the Google Drive connector/plugin is unavailable, ask the trainer to enable or install Google Drive access before storing files. Do not silently switch to OneDrive, local Downloads, or another cloud folder.
 
 If multiple Google Drive folders named `Program pal` exist, ask the trainer which one to use before storing files.
@@ -85,7 +87,7 @@ If there are multiple programs for the same client, keep all of them in the `Pro
 
 When storing an assessment:
 
-1. Find the Google Drive root folder named `Program pal`.
+1. Find or create the Google Drive root folder named `Program pal`.
 2. Create the client folder if it does not exist.
 3. Create `Assessments/` and `Programs/` subfolders if they do not exist.
 4. Upload or copy the assessment into `Assessments/`.
@@ -93,7 +95,7 @@ When storing an assessment:
 
 When storing a generated workout workbook:
 
-1. Find the Google Drive root folder named `Program pal`.
+1. Find or create the Google Drive root folder named `Program pal`.
 2. Create the client folder if it does not exist.
 3. Create `Assessments/` and `Programs/` subfolders if they do not exist.
 4. Upload or copy the workbook into `Programs/`.
