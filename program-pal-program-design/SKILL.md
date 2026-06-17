@@ -55,6 +55,20 @@ Every session must follow this top-level structure:
 
 The contents inside each section are flexible and should be determined by the client's assessment, goals, constraints, and session objective.
 
+## Session Time Budget
+
+Budget every session around the total session length:
+
+- Warm Up: 5-10 minutes. Use closer to 5 minutes for 30-minute sessions and closer to 10 minutes for 60-minute sessions.
+- Workout and conditioning: Use the remaining session time after warm-up and cooldown. If conditioning is included, fit it inside this main block rather than adding time beyond the session length.
+- Cooldown: 5 minutes regardless of session length.
+
+For common session lengths, use these rough defaults:
+
+- 30 minutes: 5-minute warm-up, 20-minute workout/conditioning block, 5-minute cooldown.
+- 45 minutes: 7-8-minute warm-up, 32-33-minute workout/conditioning block, 5-minute cooldown.
+- 60 minutes: 10-minute warm-up, 45-minute workout/conditioning block, 5-minute cooldown.
+
 ## Session Design Rules
 
 Each session must have an overarching goal with a short rationale. The goal may be simple, such as "Work toward FMS squat level 3," but it must clearly connect to the client assessment, goals, or program phase.
