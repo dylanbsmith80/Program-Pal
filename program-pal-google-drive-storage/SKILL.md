@@ -17,6 +17,8 @@ The target root folder in Google Drive is:
 
 `Program pal`
 
+Storage must always use the Google Drive account that is currently authenticated in the running user's connector or browser session. Do not use hardcoded Google Drive folder IDs, account-specific URLs, shared links, saved browser sessions from another user, or another trainer's authenticated Drive context.
+
 If the Google Drive connector/plugin is unavailable, ask the trainer to enable or install Google Drive access before storing files. Do not silently switch to OneDrive, local Downloads, or another cloud folder.
 
 If multiple Google Drive folders named `Program pal` exist, ask the trainer which one to use before storing files.

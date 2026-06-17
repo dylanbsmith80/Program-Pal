@@ -1,5 +1,12 @@
 # Local private Program Pal memory
 program-pal-exercise-selection/memory/private-exercise-history.md
 
+# Local generated client artifacts
+outputs/
+
+# Local Python cache
+__pycache__/
+*/__pycache__/
+
 # Legacy local private OneDrive storage config
 program-pal-onedrive-storage/config/storage-root.local.md
