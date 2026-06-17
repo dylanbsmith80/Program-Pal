@@ -23,6 +23,7 @@ Before finalizing a blueprint, Program Pal must know:
 - Client goals and SMART goal timeline when available
 - Training frequency
 - Session length: 30 minutes or 60 minutes
+- Session format: normal one-client session or buddy session with two clients at once
 - Difficulty rating on a 1-10 scale, with 10 being the most challenging
 - Program duration or goal timeline
 - Equipment access
@@ -32,6 +33,8 @@ Before finalizing a blueprint, Program Pal must know:
 
 If session length is missing, ask whether sessions are 30 or 60 minutes.
 
+If session format is missing, ask whether it is a normal one-client session or a buddy session with two clients training at once.
+
 If difficulty rating is missing, ask for a 1-10 difficulty target, with 10 being the most challenging.
 
 If program duration is missing and no SMART goal timeline is available, ask for the intended cycle length.
@@ -39,6 +42,8 @@ If program duration is missing and no SMART goal timeline is available, ask for 
 Do not create a final workbook until the blueprint has enough information to support a safe, specific program.
 
 If the assessment brief includes confidence scores, respect them as source-certainty signals. Required readiness information must satisfy the `program-pal-intake-questions` confidence thresholds before blueprint creation.
+
+For buddy sessions, account for two-client logistics in the blueprint: shared equipment, station flow, exercise pairing, coaching bandwidth, rest timing, and individual regressions/progressions for each client when their needs differ.
 
 ## Program Structure Rules
 

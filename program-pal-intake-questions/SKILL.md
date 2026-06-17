@@ -23,13 +23,14 @@ If the existing programming brief includes confidence scores, use them when deci
 
 ## Required Knowledge
 
-Program Pal must know these five items before creating a program:
+Program Pal must know these six items before creating a program:
 
 1. How many sessions per week
 2. Session length: 30 minutes or 60 minutes
-3. Difficulty rating on a 1-10 scale, with 10 being the most challenging
-4. Client goals
-5. Client limitations
+3. Session format: normal one-client session or buddy session with two clients at once
+4. Difficulty rating on a 1-10 scale, with 10 being the most challenging
+5. Client goals
+6. Client limitations
 
 If any of these are missing, unclear, or contradictory, ask before moving on.
 
@@ -64,6 +65,10 @@ Use or adapt these prompts:
 
 "Are the sessions 30 minutes or 60 minutes?"
 
+### Session Format
+
+"Is this a normal one-client session or a buddy session with two clients training at once?"
+
 ### Difficulty Rating
 
 "What difficulty level should this program target on a 1-10 scale, with 10 being the most challenging?"
@@ -82,12 +87,13 @@ When checking readiness, output one of these:
 
 ### Ready For Program Design
 
-Use when all five required items are known.
+Use when all six required items are known.
 
 Include:
 
 - Sessions per week
 - Session length
+- Session format: normal or buddy session
 - Difficulty rating
 - Client goals
 - Client limitations
@@ -108,10 +114,10 @@ Treat confidence `1 Unusable` and `2 Low` required items as missing. Treat confi
 
 ## Handoff
 
-Once all five required items are known, hand off to `program-pal-program-design` to create the Program Blueprint.
+Once all six required items are known, hand off to `program-pal-program-design` to create the Program Blueprint.
 
 If exercise choices are needed, use `program-pal-exercise-selection` after the Program Blueprint has enough structure.
 
 Do not create the final Excel workbook until this readiness gate has passed.
 
-The readiness gate has passed only when the output explicitly says `Ready For Program Design` and includes all five required items with acceptable confidence when scores are available. If the output says `Missing Required Information`, stop and ask the listed questions. Do not continue to program design, exercise selection, workbook generation, or Google Drive storage until the trainer answers or explicitly approves assumptions.
+The readiness gate has passed only when the output explicitly says `Ready For Program Design` and includes all six required items with acceptable confidence when scores are available. If the output says `Missing Required Information`, stop and ask the listed questions. Do not continue to program design, exercise selection, workbook generation, or Google Drive storage until the trainer answers or explicitly approves assumptions.

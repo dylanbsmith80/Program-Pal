@@ -32,6 +32,14 @@ State whether sessions are 30 or 60 minutes.
 
 If session length is unknown, ask before finalizing the blueprint.
 
+### Session Format
+
+State whether sessions are normal one-client sessions or buddy sessions with two clients training at once.
+
+If session format is unknown, ask before finalizing the blueprint.
+
+For buddy sessions, explain how the program handles shared equipment, station flow, coach attention, rest timing, and any needed individual modifications.
+
 ### Difficulty Rating
 
 State the target difficulty rating on a 1-10 scale, with 10 being the most challenging. Explain how that rating affects exercise selection, volume, intensity, rest, and progression.

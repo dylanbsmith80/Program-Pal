@@ -58,7 +58,7 @@ Check that the program reflects:
 - Primary and secondary goals
 - Assessment findings
 - Safety flags, pain notes, and movement limitations
-- Schedule, session length, equipment, and difficulty target
+- Schedule, session length, session format, equipment, and difficulty target
 - Exercise preferences and disliked movements
 - Prior progress or previous-program notes when available
 
@@ -83,6 +83,8 @@ Confirm every session has:
 - Cooldown
 - A clear session goal and rationale
 - Realistic density for the stated session length
+
+For buddy sessions, confirm the program accounts for two-client logistics: shared equipment, station flow, coach attention, rest timing, and individual modifications where the clients differ.
 
 Warm-ups should follow the current `program-pal-program-design` rule unless the trainer explicitly overrides it:
 

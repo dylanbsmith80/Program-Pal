@@ -15,7 +15,7 @@ Before designing features, writing prompts, creating workout-program logic, or c
 
 Use `program-pal-initial-assessment` when working from client intake forms, initial assessment notes, fitness test results, FMS/posture notes, SMART goals, or fitness-goal questionnaires.
 
-Use `program-pal-intake-questions` before program design when required details may be missing. Program Pal must know sessions per week, session length, difficulty rating, client goals, and client limitations before creating the final program.
+Use `program-pal-intake-questions` before program design when required details may be missing. Program Pal must know sessions per week, session length, session format, difficulty rating, client goals, and client limitations before creating the final program.
 
 Use `program-pal-program-design` after assessment context is available and before creating the final workout workbook. This skill creates the Program Blueprint.
 
@@ -37,7 +37,7 @@ When creating a workout program from an assessment, Program Pal must complete th
 
 2. Intake readiness gate
    - Use `program-pal-intake-questions` before program design.
-   - Program Pal must know sessions per week, session length, difficulty rating, client goals, and client limitations.
+   - Program Pal must know sessions per week, session length, session format, difficulty rating, client goals, and client limitations.
    - If any required item is missing or unclear, ask the trainer before creating the Program Blueprint or final workbook.
    - Do not replace missing answers with assumptions unless the trainer explicitly approves those assumptions.
 
