@@ -6,6 +6,14 @@ The real `private-exercise-history.md` file is ignored by git so Program Pal can
 
 Do not use real client names in this file if there is any chance the file could be shared.
 
+## Facility And Equipment Constraints
+
+Use this section for standing facility notes Program Pal should remember when selecting exercises.
+
+- No sled lane available.
+- No assisted pull-up machine available.
+- Limited cable attachments; avoid programming specialty attachments unless confirmed.
+
 ## Entry Template
 
 ### Exercise Name

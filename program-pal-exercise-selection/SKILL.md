@@ -62,6 +62,8 @@ If a verified exercise can accomplish the same training purpose, prefer the veri
 
 Before selecting unfamiliar exercises, check `memory/private-exercise-history.md` if it exists. Use it to find exercises Program Pal has used successfully before, along with trainer notes about regressions, progressions, cautions, and client types.
 
+Also check private history for facility or equipment constraints before selecting exercises. If the trainer says a programmed exercise cannot be done because the needed equipment, machine, attachment, station, space, or facility feature is unavailable, record that constraint in private history for future programs.
+
 Use the private history as supporting context, not as automatic proof that an exercise is safe for a new client. Re-check the current client's assessment, goals, equipment, and safety constraints every time.
 
 When adding to private history:
@@ -70,6 +72,8 @@ When adding to private history:
 - Avoid identifiable client details.
 - Use generic client descriptors such as "beginner lower-body strength client" or "client with limited equipment."
 - Record what worked, what to watch for, and how the exercise was progressed or regressed.
+- Record facility and equipment constraints generically, such as "no trap bar available," "no sled lane," "limited cable attachments," or "no assisted pull-up machine."
+- When a constraint comes from trainer feedback, treat it as a standing facility note unless the trainer says it was temporary.
 - Keep sensitive health, injury, or medical details out unless the file is stored privately and the trainer explicitly wants those notes there.
 
 ## Selection Criteria
@@ -127,6 +131,19 @@ When substituting, preserve the training purpose whenever possible.
 Example:
 
 - If the purpose is squat-pattern strength but back squats are inappropriate, consider goblet squats, box squats, leg press, split squats, or assisted squat variations depending on the client.
+
+## Exercise Replacement Decision Tree
+
+When replacing an exercise, choose the first applicable reason and respond accordingly:
+
+1. Pain or safety issue: stop using the exercise for that client, choose a pain-free regression or alternate pattern, and note the safety rationale.
+2. Equipment or facility missing: replace it with an option that uses available equipment, preserve the training purpose, and record the missing equipment or facility constraint in private history for future programs.
+3. Too hard or too technical: regress complexity, load, range of motion, stability demand, tempo, or volume while keeping the same goal.
+4. Disliked exercise: substitute a preferred or neutral option unless the exercise is essential; if it is essential, explain why and offer the closest tolerable variation.
+5. Too long or setup-heavy: choose a faster setup, simpler station flow, superset-compatible option, or lower-transition alternative that fits the session time budget.
+6. Not goal-relevant: remove or replace it with an exercise that directly supports the session goal, program phase, or assessment finding.
+
+For equipment or facility replacements, do not only fix the current program. Carry the lesson forward in `memory/private-exercise-history.md` so Program Pal avoids repeatedly programming unavailable options.
 
 ## Progression Rules
 
