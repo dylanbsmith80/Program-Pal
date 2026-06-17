@@ -57,7 +57,7 @@ Place the most challenging, highest-priority work early in the session while the
 Use these ordering principles:
 
 - Warm-up, dynamic mobility, activation, and prep work come first.
-- Warm-ups should include 1-2 additional movements that specifically prepare the client for the main workout.
+- Warm-ups should usually include 1-2 temperature-raising dynamic movements, 3 movements that specifically prepare the client for the main workout, and 2 client-specific mobility movements.
 - Heavy, high-skill, high-energy, or multi-joint movements usually come early in the workout.
 - Accessory movements usually come later in the workout.
 - Cardio or conditioning may come early when it is the highest-priority or most challenging work and the session does not include especially heavy lifting.
@@ -70,7 +70,11 @@ Do not add corrective or mobility work as random filler. Its placement should ha
 
 ## Warm-Up Specificity
 
-Warm-ups should not be generic. In addition to general dynamic stretching or light mobility, include 1-2 movements that directly prepare the client for the main workout.
+Warm-ups should not be generic. As a default, include:
+
+- 1-2 temperature-raising dynamic movements
+- 3 movements that directly prepare the client for the main workout
+- 2 client-specific mobility movements
 
 Choose these movements based on:
 
@@ -87,7 +91,7 @@ Examples:
 - Before conditioning without heavy lifting, include progressively faster movement prep that matches the conditioning mode.
 - Before core-skill work, include breathing, bracing, or trunk-control prep.
 
-For 30-minute sessions, keep these movements brief and highly targeted. For 60-minute sessions, the warm-up may include a fuller prep sequence when it improves the main workout.
+For 30-minute sessions, keep these movements brief and highly targeted. If the full default warm-up would crowd out the workout, combine purposes in a single drill or reduce volume before removing the assessment-specific intent. For 60-minute sessions, the warm-up may include a fuller prep sequence when it improves the main workout.
 
 ## Split Selection
 
