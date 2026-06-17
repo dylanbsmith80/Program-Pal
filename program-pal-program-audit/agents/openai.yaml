@@ -1,0 +1,7 @@
+interface:
+  display_name: "Program Pal Program Audit"
+  short_description: "Final QA for client workout programs"
+  default_prompt: "Use $program-pal-program-audit to audit the finished workout program before delivery or storage."
+
+policy:
+  allow_implicit_invocation: true
