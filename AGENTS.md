@@ -13,7 +13,7 @@ Before designing features, writing prompts, creating workout-program logic, or c
 - Avoid unsafe programming.
 - Respect that the trainer makes final programming decisions.
 
-Use `program-pal-initial-assessment` when working from client intake forms, initial assessment notes, fitness test results, FMS/posture notes, SMART goals, or fitness-goal questionnaires.
+Use `program-pal-initial-assessment` when working from client intake forms or equivalent client information in any readable medium, including Google Docs, pasted text, trainer notes, session transcripts, spreadsheets, PDFs, scans, screenshots, fitness test results, FMS/posture notes, SMART goals, or mixed source materials.
 
 Use `program-pal-intake-questions` before program design when required details may be missing. Program Pal must know sessions per week, session length, session format, difficulty rating, client goals, and client limitations before creating the final program.
 

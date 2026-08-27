@@ -1,40 +1,53 @@
 ---
 name: program-pal-initial-assessment
-description: Use when Program Pal receives a completed or partially completed personal training initial assessment, intake form, client questionnaire, fitness test record, FMS notes, posture notes, SMART goals, or fitness-goal notes and needs to extract client context, identify safety flags, ask follow-up questions, and prepare programming inputs before creating a workout program.
+description: Use when Program Pal receives client assessment information in any readable medium—including a completed or partially completed personal training initial assessment, intake form, Google Doc, pasted text, trainer notes, session transcript, client questionnaire, spreadsheet, PDF, scan, screenshot, fitness test record, FMS notes, posture notes, SMART goals, or mixed source materials—and needs to extract client context, identify safety flags, ask follow-up questions, and prepare programming inputs before creating a workout program.
 ---
 
 # Program Pal Initial Assessment Skill
 
-Use this skill to turn a client's initial assessment information into programming-ready context for Program Pal.
+Use this skill to turn a client's initial assessment information into programming-ready context for Program Pal, regardless of the source medium or layout.
 
 This skill governs assessment interpretation, missing-information discovery, safety review, and programming input preparation. It does not format the final workout workbook. For workbook formatting, use `personal-training-workbook-format`.
 
 ## Source Reference
 
-For the assessment template fields and expected sections, read `references/initial-assessment-template.md` when needed.
+For the standard assessment template fields and expected sections, read `references/initial-assessment-template.md` when needed. Treat that reference as the canonical schema for the standard intake form and as a semantic field guide for nonstandard sources; do not require a nonstandard source to copy the form's labels or layout.
+
+## Source Routing
+
+Review all supplied client materials before deciding that information is missing.
+
+- If a source is the standard Program Pal assessment form, interpret it field by field as usual using `references/initial-assessment-template.md`. Do not replace or simplify this route.
+- If a source is a Google Doc or another nonstandard document, extract facts from its headings, prose, tables, lists, question-and-answer sections, and clearly identified trainer or client notes. Map each fact by meaning into the applicable assessment domain.
+- If a document contains embedded images, scans, screenshots, or diagrams that may hold client answers, inspect those elements as well as the document text.
+- If multiple sources are supplied, combine them into one client record, deduplicate repeated facts, and retain the source and confidence of important findings. Never silently overwrite a conflicting value; report the conflict and clarify it when it affects safety or programming readiness.
+- If only a link is supplied and its content cannot be accessed, ask the trainer to grant access, paste the content, or provide an export. Do not treat an inaccessible document as a blank assessment.
+
+The absence of standard form fields or labels is not itself a parsing failure. Extract every relevant fact that is actually present, then use the existing missing-information rules for required facts that remain unknown.
 
 ## Core Workflow
 
-When given an assessment, intake response, notes from an initial session, or a partially completed assessment:
+When given assessment information in any medium:
 
-1. Extract the client's known information.
-2. Separate facts from assumptions and score the source confidence for each important finding.
-3. Identify safety flags and programming constraints.
-4. Identify missing information that matters before programming.
-5. Summarize the client's goals, preferences, and training context.
-6. Convert assessment results into programming implications.
-7. Produce a concise programming brief that can feed the workout-program creation step.
+1. Identify and review every supplied source.
+2. Extract the client's known information by meaning, not only by matching standard field names.
+3. Separate facts from assumptions and score the source confidence for each important finding.
+4. Identify safety flags and programming constraints.
+5. Identify missing information that matters before programming.
+6. Summarize the client's goals, preferences, and training context.
+7. Convert assessment results into programming implications.
+8. Produce a concise programming brief that can feed the workout-program creation step.
 
 Do not create a full workout program until enough safety, goal, schedule, equipment, and training-context information is available.
 
-## Reading PDFs And Scans
+## Reading Documents, PDFs, And Scans
 
-Assessment PDFs may contain typed text, form fields, annotations, highlights, handwriting, or image-only marks.
+Assessment sources may contain typed text, headings, tables, form fields, annotations, highlights, handwriting, embedded images, or image-only marks.
 
 Use the most reliable available method:
 
-1. Try extracting text, form fields, and annotations.
-2. If important answers are missing, render the pages and inspect the visual content.
+1. Extract the complete readable document content, including headings, lists, tables, form fields, and clearly attributable notes or annotations.
+2. If important answers may exist in visual elements, render or inspect the relevant pages and embedded images.
 3. If handwriting or marks are unclear, score the finding with low or medium confidence, record the uncertainty, and ask the trainer to confirm it when it affects safety or required programming readiness.
 4. Do not invent missing assessment answers.
 

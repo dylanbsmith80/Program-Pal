@@ -1,7 +1,7 @@
 interface:
   display_name: "Program Pal Initial Assessment"
-  short_description: "Turn client assessments into programming briefs"
-  default_prompt: "Use $program-pal-initial-assessment to interpret this client assessment and prepare programming inputs."
+  short_description: "Turn client information from any medium into programming briefs"
+  default_prompt: "Use $program-pal-initial-assessment to interpret these client assessment materials, regardless of source format, and prepare programming inputs."
 
 policy:
   allow_implicit_invocation: true
