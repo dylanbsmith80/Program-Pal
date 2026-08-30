@@ -1,0 +1,4 @@
+interface:
+  display_name: "Program Pal Client Memory"
+  short_description: "Remember each client across training cycles"
+  default_prompt: "Use $program-pal-client-memory to retrieve or update this client’s private training memory."

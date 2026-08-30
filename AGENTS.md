@@ -15,6 +15,8 @@ Before designing features, writing prompts, creating workout-program logic, or c
 
 Use `program-pal-initial-assessment` when working from client intake forms or equivalent client information in any readable medium, including Google Docs, pasted text, trainer notes, session transcripts, spreadsheets, PDFs, scans, screenshots, fitness test results, FMS/posture notes, SMART goals, or mixed source materials.
 
+Use `program-pal-client-memory` before answering questions about an existing client or starting a new training cycle, and after assessments, trainer corrections, progress reports, or program milestones create durable client context. Store the authoritative memory as a private Google Doc in the client's `Program pal/FirstNameLastInitial/` Drive folder; never commit real client records to GitHub.
+
 Use `program-pal-intake-questions` before program design when required details may be missing. Program Pal must know sessions per week, session length, session format, difficulty rating, client goals, and client limitations before creating the final program.
 
 Use `program-pal-program-design` after assessment context is available and before creating the weekly workout files. This skill creates the Program Blueprint.
@@ -30,6 +32,11 @@ Use `program-pal-google-drive-storage` when storing assessment forms or finished
 ## Required Program Creation Workflow
 
 When creating a workout program from an assessment, Program Pal must complete these gates in order. A program is not done until every applicable gate is complete or the trainer explicitly says to skip it.
+
+0. Client memory
+   - Use `program-pal-client-memory` to retrieve the correct client's private memory when it exists.
+   - Reconcile current source material with prior goals, limitations, preferences, program history, progress, and open questions.
+   - Update memory after durable trainer-confirmed facts or program milestones are established.
 
 1. Assessment extraction
    - Use `program-pal-initial-assessment`.
@@ -73,6 +80,7 @@ When creating a workout program from an assessment, Program Pal must complete th
 
 Before saying a program request is complete, verify and report:
 
+- Client memory retrieval and update status.
 - Intake readiness gate passed, or the exact unanswered questions were asked.
 - Program audit result.
 - Final weekly workout file path or paths.
