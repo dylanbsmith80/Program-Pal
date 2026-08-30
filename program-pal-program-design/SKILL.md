@@ -1,16 +1,16 @@
 ---
 name: program-pal-program-design
-description: Use when Program Pal needs to turn a client assessment brief, goals, constraints, schedule, equipment access, or trainer notes into a client-specific training program blueprint before creating the final workout workbook.
+description: Use when Program Pal needs to turn a client assessment brief, goals, constraints, schedule, equipment access, or trainer notes into a client-specific training program blueprint before creating weekly workout files.
 ---
 
 # Program Pal Program Design Skill
 
 Use this skill to design the actual training program after client context has been gathered.
 
-This skill governs training-cycle structure, session structure, split selection, phase logic, exercise-ordering decisions, and the Program Blueprint. It does not interpret raw assessments or format the final Excel workbook.
+This skill governs training-cycle structure, session structure, split selection, phase logic, exercise-ordering decisions, and the Program Blueprint. It does not interpret raw assessments or format the weekly workout files.
 
 - For assessment extraction and safety context, use `program-pal-initial-assessment`.
-- For final Excel workbook layout and formatting, use `personal-training-workbook-format`.
+- For weekly workout spreadsheet layout and formatting, use `personal-training-workbook-format`.
 
 ## Source Reference
 
@@ -39,7 +39,7 @@ If difficulty rating is missing, ask for a 1-10 difficulty target, with 10 being
 
 If program duration is missing and no SMART goal timeline is available, ask for the intended cycle length.
 
-Do not create a final workbook until the blueprint has enough information to support a safe, specific program.
+Do not create weekly workout files until the blueprint has enough information to support a safe, specific program.
 
 If the assessment brief includes confidence scores, respect them as source-certainty signals. Required readiness information must satisfy the `program-pal-intake-questions` confidence thresholds before blueprint creation.
 
@@ -178,7 +178,7 @@ Use client preferences when possible. Avoid disliked exercises unless there is a
 
 ## Output
 
-Produce a Program Blueprint before creating the final workbook.
+Produce a Program Blueprint before creating the weekly workout files.
 
 The blueprint should make it clear:
 
@@ -189,4 +189,4 @@ The blueprint should make it clear:
 - Which uncertain safety or readiness findings shaped conservative choices, if any
 - What should be tracked to judge progress
 
-After the blueprint is complete and safe enough to proceed, use `personal-training-workbook-format` to create or format the final Excel workout workbook.
+After the blueprint is complete and safe enough to proceed, use `personal-training-workbook-format` to create or format the weekly workout files.

@@ -1,255 +1,185 @@
 ---
 name: personal-training-workbook-format
-description: Format Excel workout programs in the TG 3.0 style: clean, modular, client-specific training workbooks with overview tabs, weekly/program tabs, reusable session blocks, readable tables, and consistent print-friendly layout.
+description: Create or format Program Pal weekly workout spreadsheets using one file per client week, one training day per tab, compact warm-up/workout/cooldown layouts, concise coaching cues, and trainer-preferred file naming.
 ---
 
 # Personal Training Workbook Formatting Skill
 
-Use this skill when creating Excel workout programs for personal training clients. This skill governs spreadsheet formatting and organization only. It must not assume a specific training split, number of sessions, exercise type, or program philosophy.
+Use this skill when creating or formatting Program Pal workout spreadsheets. It governs client-facing spreadsheet organization and visual formatting, not program design or exercise selection.
 
-Every client's workout content can be different. Preserve the visual workbook system while adapting the sheet count, session count, section labels, and table headers to the client's actual program.
+Preserve the trainer's weekly-file/day-tab system while adapting the number of days, exercises, prescriptions, and coaching notes to the client's actual program.
 
 ## Reference Asset
 
-Use `assets/generic-workout-format-reference.xlsx` as the visual formatting reference for this skill when a concrete example is useful.
+Use `assets/generic-workout-format-reference.xlsx` as the visual and structural reference when a concrete example is useful.
 
-This workbook contains generic placeholder programming only. Use it to inspect layout, color usage, row heights, column widths, merged header bands, session block rhythm, and flexible table structures. Do not copy its workout content, exercise choices, session count, or program structure unless the user's requested program actually calls for something similar.
+The asset is sanitized and contains generic placeholder programming. Use it to inspect weekly file structure, day-tab layout, color usage, spacing, column widths, timing formulas, and table rhythm. Do not copy its exercise choices or day count unless they fit the actual client.
 
-## Workbook Structure
+## Weekly File Structure
 
-Create one workbook with:
-- An `Overview & Rationale` sheet first.
-- One sheet per training week, phase, block, or cycle after the overview.
-- Sheet names such as `Week 1`, `Week 2`, etc., unless another naming system better fits the program.
-- Each training sheet may contain any number of session blocks: 1, 2, 3, 4, or more.
-- Keep the workbook compact, print-friendly, and easy to scan during a training session.
+Create one workout spreadsheet file per client per training week.
 
-Do not create empty session blocks just to match another template. If a client trains once per week, use one session block. If a client trains three times per week, stack three session blocks. If the program uses a different structure, adapt the number and labels while preserving the formatting rhythm.
+Name each file:
 
-## Global Style
+`ClientInitials ProgramVersion Week N.xlsx`
 
-Use Calibri throughout.
-- Main workbook title: 16-18 pt, bold, white text.
-- Training sheet title: 16 pt, bold, white text.
-- Session headers: 13 pt, bold, white text.
-- Table headers: 10 pt, bold, white text.
-- Body cells: 10 pt.
-- Long notes cells: 9 pt, wrapped text.
-- Metadata rows: 9 pt, italic, muted dark gray.
+Examples:
 
-Use fills instead of heavy borders. Organization should come from color bands, merged headers, spacing rows, alternating fills, and consistent alignment.
+- `MZ 2.0 Week 1.xlsx`
+- `TG 2.0 Week 2.xlsx`
 
-## Color System
+Use the trainer-provided program version. When the active convention is `2.0` and no different version is supplied, use `2.0`. Do not add a date prefix to weekly workout files unless the trainer explicitly asks for one.
 
-Use a dark navy workbook/program header:
+Create one tab per scheduled training day:
+
+- `Day 1`
+- `Day 2`
+- `Day 3`
+- Continue only for the number of days actually prescribed.
+
+Do not place multiple training days on one tab. Do not create an `Overview & Rationale` tab by default. Keep the Program Blueprint, deeper rationale, and trainer learning notes outside the client-facing weekly file unless the trainer explicitly requests an overview.
+
+## Day Tab Structure
+
+Each day tab should present one complete session at a glance.
+
+Include:
+
+- `Client Name:`
+- `Day:`
+- `Date:`
+- `Total Time:` for the main workout block
+- `Warm Up:` with its estimated time
+- `Cool Down:` with its estimated time
+- `Conditioning:` as the default main-section label
+- Main table: `Exercise | Sets | Reps | Est Time | 3 key Points`
+
+The main-section label may change when another label clearly describes the session better, but `Conditioning:` is the default trainer convention.
+
+Display Warm Up and Cool Down beside the main workout when practical. Keep the tab compact rather than stacking large standalone sections vertically.
+
+## Default Sheet Layout
+
+Use columns `A:K` as the default day-tab grid:
+
+- `A:B`: Warm Up items and estimated time
+- `C:D`: Cool Down items and estimated time
+- `E`: narrow visual spacer
+- `F`: main-section label
+- `G`: Exercise
+- `H`: Sets
+- `I`: Reps
+- `J`: Est Time
+- `K`: 3 key Points
+
+Recommended widths:
+
+- A and C: `22-26`
+- B and D: `8-10`
+- E: `2-3`
+- F: `12-16`
+- G: `26-32`
+- H: `7-9`
+- I: `9-11`
+- J: `9-11`
+- K: `38-48`
+
+Freeze the top metadata/header area when the sheet is long enough to benefit. Hide gridlines when explicit fills and borders define the layout. Use landscape orientation and fit to one page wide when print settings are available.
+
+## Time Accounting
+
+The displayed `Total Time` should equal the sum of the `Est Time` values in the main workout table.
+
+Show Warm Up and Cool Down estimates separately. Five minutes each is the trainer's common default, but use the Program Blueprint when it specifies another duration.
+
+Also calculate or verify the complete session envelope internally:
+
+`Warm Up + Total Time + Cool Down`
+
+The complete session envelope must fit the client's available session length. Do not silently shorten or omit warm-up or cooldown work to make the main table fit.
+
+## Prescription Rules
+
+Allow exercise prescriptions such as:
+
+- Numeric repetitions: `8`, `10`, `12`
+- Per-side repetitions: `8 ea`, `10 each`
+- Duration or distance: `30 sec`, `200 m`
+- RPE targets
+- Drop sets
+- Tempo instructions
+- Exercise-specific timing or progression notes
+
+Use typed numeric values for sets and estimated minutes when practical so timing formulas remain auditable. Use text where the prescription genuinely contains units or per-side language.
+
+## Coaching Notes
+
+The `3 key Points` column is client-facing and concise. Use it for only the most important execution instructions, such as:
+
+- RPE target
+- Tempo
+- Range-of-motion limit
+- Equipment setup
+- Drop-set or progression instruction
+- Safety reminder
+- One or two critical technique cues
+
+It may be blank when no extra cue is needed. Do not place lengthy exercise rationales in the weekly workout file. Keep deeper reasoning in the Program Blueprint or private trainer notes.
+
+## Visual Style
+
+Use Calibri throughout unless the trainer supplies another reference.
+
+- Workbook title: 16-18 pt, bold, white text
+- Major section labels: 10-12 pt, bold
+- Table headers: 10 pt, bold, white text
+- Body cells: 10 pt
+- Long coaching notes: 9-10 pt, wrapped
+- Metadata: 9-10 pt, muted dark gray
+
+Retain the established Program Pal palette:
+
 - Dark navy: `#1F2D3D` or `#1B3A6B`
-- White text for major headers.
-
-Use color families to visually separate sessions, not to enforce a training split.
-
-Recommended color families:
 - Blue header: `#2E75B6`
-- Light blue row fill: `#DCE9F5`
-- Very light blue alternate fill: `#F4F8FC`
-- Mid blue accent: `#C2D8EE`
+- Light blue: `#DCE9F5`
+- Very light blue: `#F4F8FC`
+- Pale yellow for warm-up, cooldown, cautions, or special instructions: `#FEFBD8`
 
-- Red header: `#B03030`
-- Deep red session header: `#7B1A1A`
-- Light red row fill: `#FAE2E0`
-- Very light red alternate fill: `#FEF6F6`
-- Mid red accent: `#F0C5C2`
+Use fills, whitespace, and light structural borders. Avoid heavy boxes around every cell. Alternate light fills in the workout table when it improves scanning.
 
-Use pale yellow only for special notes, warm-ups, cautions, or important instructions:
-- Pale yellow: `#FEFBD8`
+## Content Flexibility
 
-For programs with more than two sessions per week, rotate color families or reuse the same neutral/dark session header style with alternating light fills. Do not imply that blue always means lower body or red always means upper body unless the client's actual program uses that distinction.
+The formatting system must support:
 
-## Sheet Layout
+- Any number of training days in the week
+- Any safe, client-specific number of exercises
+- Strength, hypertrophy, conditioning, mobility, rehabilitation, sport performance, endurance, testing, or mixed sessions
+- Normal and buddy sessions
+- Supersets, circuits, intervals, or standalone exercises
 
-Training sheets should use columns `A:G`.
-- Column A: narrow outside margin, width about `1.5`.
-- Column B: primary item/name column, width about `34`.
-- Column C: first training variable column, width about `9`.
-- Column D: second training variable column, width about `16`.
-- Column E: third training variable column, width about `14`.
-- Column F: notes/key points column, width about `58`.
-- Column G: narrow outside margin, width about `1.5`.
-
-Overview sheet should use columns `A:G`.
-- A and G are narrow margins, width about `2`.
-- B is the main label column, width about `24`.
-- C:E are middle content columns, width about `18`.
-- F is a slightly wider notes/status column, width about `22`.
-
-Freeze panes on training sheets at `B3`, with the first two rows and first column frozen.
-
-Training sheets should be landscape-oriented and fit to one page wide.
-
-## Training Sheet Pattern
-
-Each training sheet should begin with:
-1. Row 1: merged title `A1:G1`, dark navy fill, white bold title.
-2. Row 2: merged subtitle `A2:G2`, light gray-blue fill, italic summary text.
-3. Row 3: spacer row, height about `10`.
-
-Each session block should follow this pattern:
-1. Session header row:
-   - Merge `B:D` for the session name.
-   - Put total time or session duration in `E:F` when available.
-   - Height about `24`.
-   - Use a strong session color with white bold text.
-2. Metadata row:
-   - Include useful session metadata, such as client name, day, date, location, equipment, warm-up/cool-down timing, or coach notes.
-   - Height about `15`.
-   - Small italic text.
-3. Warm-up, prep, or instruction row when relevant:
-   - Merge `B:F`.
-   - Height about `16`.
-   - Pale yellow fill.
-   - Italic or small instructional style.
-4. Spacer row:
-   - Height about `5`.
-5. Repeated formatted sections:
-   - Section header row merged `B:F`, height about `18-20`.
-   - Table header row.
-   - Detail rows.
-
-The number of sessions per sheet is flexible. Stack as many session blocks as the client's program requires.
-
-## Section Flexibility
-
-Section names must match the client's actual workout. Do not force all programs into the same exercise categories.
-
-Common section examples:
-- `MAIN LIFTS`
-- `ACCESSORY WORK`
-- `CORE WORK`
-- `CONDITIONING`
-- `MOBILITY`
-- `WARM-UP`
-- `SKILL WORK`
-- `TECHNIQUE`
-- `CIRCUIT`
-- `INTERVALS`
-- `REHAB / PREHAB`
-- `RECOVERY`
-- `TESTING`
-- `COOLDOWN`
-
-Use whatever labels fit the program. The formatting is the template, not the programming philosophy.
-
-## Table Formatting
-
-Use a five-column table across `B:F` by default.
-
-Default strength table:
-`Exercise | Sets | Reps / Duration | Rest | Notes / Key Points / Why`
-
-Adapt table headers to the workout type when needed. Examples:
-- Strength: `Exercise | Sets | Reps | Rest | Notes`
-- Conditioning: `Movement | Rounds | Time / Distance | Rest | Notes`
-- Mobility: `Drill | Sets | Duration | Focus | Notes`
-- Rehab: `Exercise | Dose | Tempo | Constraint | Notes`
-- Endurance: `Segment | Intensity | Duration | Recovery | Notes`
-- Skill work: `Drill | Sets | Target | Rest | Coaching Notes`
-
-Preserve the visual structure even when labels change:
-- Column B should be left-aligned and bold for primary item names.
-- Columns C, D, and E should usually be centered.
-- Column F should be left-aligned, wrapped, and smaller text.
-- Alternate detail rows with light and very-light fills from the current session color family.
-- Use darker section bands to visually separate major sections.
-- Use blank spacer rows between sections instead of heavy borders.
-
-For supersets, circuits, or grouped work:
-- Keep related rows adjacent.
-- Use indentation or a marker such as `->` for dependent movements when helpful.
-- Explain pairing, flow, or rest rules in the notes column.
-- Do not create a separate visual system unless the workout structure truly requires it.
-
-## Overview Sheet Pattern
-
-The overview sheet should include:
-1. Merged workbook title row `A1:G1`, height about `36`, dark navy fill, white bold text.
-2. Merged goal/subtitle row `A2:G2`, height about `22`, blue fill or muted header fill.
-3. Spacer row.
-4. Program overview section:
-   - Section header merged across `B:F`.
-   - Table summarizing weeks, phases, sessions, goals, intensity, or other relevant structure.
-5. Tracker section when useful:
-   - Section header merged across `B:F`.
-   - Compact table for important client measures, test results, milestones, attendance, or progress markers.
-6. Rationale/notes section when useful:
-   - Section header merged across `B:F`.
-   - Two-column decision/rationale or note/explanation table.
-   - Use taller wrapped rows, about `38` high.
-
-The overview should explain the organization of the program, not duplicate every workout in full.
-
-## Row Heights
-
-Use deliberate row heights:
-- Main title rows: `30-36`.
-- Subtitle rows: `18-22`.
-- Session headers: `24`.
-- Metadata rows: `15`.
-- Warm-up/prep/instruction rows: `16`.
-- Section headers: `18-20`.
-- Table header rows: `17`.
-- Detail rows: about `40`.
-- Spacer rows: `5-10`.
-- Overview rationale rows: about `38`.
-
-Adjust row count and row height when necessary so content is readable. Do not allow important text to be clipped.
-
-## Content Adaptation Rules
-
-This skill is formatting-only.
-
-The agent must adapt to:
-- Any number of training days per week.
-- Any number of sessions per sheet.
-- Any number of weeks, phases, or program blocks.
-- Any training style, including strength, hypertrophy, conditioning, mobility, rehab, sport performance, testing, endurance, or mixed programs.
-- Any section labels that fit the client's program.
-- Any table headers that fit the type of work being prescribed.
-
-The agent must preserve:
-- One overview-style sheet when useful.
-- Consistent sheet title and subtitle rows.
-- Modular session blocks.
-- Consistent section/table rhythm.
-- Clear color-coded organization.
-- Wide wrapped notes column.
-- Print-friendly landscape layout.
-- Clean spacing, alignment, and readable row heights.
+Keep related movements adjacent. Explain pairing, station flow, or rest rules briefly in `3 key Points`. Do not add empty tabs or placeholder rows merely to match the reference asset.
 
 ## Verification
 
-Before finalizing:
-- Confirm all training sheets use consistent column widths.
-- Confirm training sheets freeze at `B3`.
+Before delivery or Google Drive storage:
+
+- Confirm the file name follows `ClientInitials ProgramVersion Week N.xlsx`.
+- Confirm one file represents one week.
+- Confirm every scheduled day has exactly one correctly named tab.
+- Confirm there is no default overview tab or copied placeholder content.
+- Confirm Client Name, Day, Date, Total Time, Warm Up, Cool Down, and the main table appear on every day tab.
+- Confirm `Total Time` equals the sum of main-table estimated times.
+- Confirm the complete session envelope fits the client's session length.
 - Confirm long notes are wrapped and visible.
-- Confirm no important text is clipped.
-- Confirm merged title, subtitle, session, warm-up/prep, and section rows are consistent.
-- Confirm the workbook does not contain empty blocks copied from another template.
-- Confirm the format works for the actual client program structure, regardless of workout type.
+- Confirm no important text is clipped and no empty template blocks remain.
+- Confirm formulas contain no spreadsheet errors.
 
 ## Final Workbook Inspection Gate
 
-Before delivering, uploading, or reporting a finished `.xlsx` workout workbook as complete, open or render the generated workbook when possible and inspect the final visual result.
+Open or render every generated day tab and inspect the same file that will be delivered or uploaded.
 
-The final inspection should confirm:
+Confirm the workbook opens without errors; expected day tabs are present; headers, colors, borders, row heights, and column widths render as intended; formulas display correctly; and the file remains compact and print-friendly.
 
-- The workbook opens without errors.
-- The expected sheets are present and correctly named.
-- The `Overview & Rationale` sheet appears first when included.
-- Headers, merged cells, colors, borders, row heights, and column widths render as intended.
-- Long text is wrapped, readable, and not clipped.
-- Training sheets remain print-friendly, landscape-oriented, and fit to one page wide.
-- No empty template blocks, stale placeholder content, or copied generic workout content remain.
-- The inspected file is the same file that will be delivered or uploaded.
+If visual rendering is unavailable, perform the strongest available programmatic check of sheet names, used ranges, representative values, formulas, merged ranges, and print settings. State that visual rendering was unavailable and summarize the fallback checks.
 
-If a local spreadsheet app, render tool, or reliable preview workflow is unavailable, perform the strongest available fallback inspection by programmatically checking workbook sheets, dimensions, merged ranges, print settings, and representative cell values. State that visual rendering was unavailable and summarize the fallback checks completed.
-
-Do not upload a generated workout workbook to Google Drive until this final inspection gate has passed or the trainer explicitly approves skipping it.
+Do not upload a generated weekly workout file until this inspection gate passes or the trainer explicitly approves skipping it.

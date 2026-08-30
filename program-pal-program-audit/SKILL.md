@@ -1,13 +1,13 @@
 ---
 name: program-pal-program-audit
-description: Use after Program Pal creates or revises a final workout workbook, and before delivery or Google Drive storage, to audit the program for client specificity, safety, workflow compliance, time realism, workbook quality, and storage readiness.
+description: Use after Program Pal creates or revises weekly workout files, and before delivery or Google Drive storage, to audit the program for client specificity, safety, workflow compliance, time realism, spreadsheet quality, and storage readiness.
 ---
 
 # Program Pal Program Audit Skill
 
 Use this skill as the final quality gate for Program Pal workout programs.
 
-This skill does not design the program, select exercises, format the workbook, or upload files. It checks whether the completed draft is ready for trainer review and storage.
+This skill does not design the program, select exercises, format spreadsheets, or upload files. It checks whether the completed weekly files are ready for trainer review and storage.
 
 ## When To Use
 
@@ -22,7 +22,7 @@ Use this skill after:
 Use it before:
 
 - Delivering the final program to the trainer
-- Uploading the finished workbook with `program-pal-google-drive-storage`
+- Uploading the finished weekly files with `program-pal-google-drive-storage`
 - Saying the program request is complete
 
 If the trainer explicitly asks to skip audit, report that the audit was skipped and name any obvious residual risk.
@@ -35,10 +35,10 @@ Review the available materials:
 - Intake readiness output
 - Program Blueprint
 - Exercise choices and rationale
-- Finished workbook or workbook-generation script
+- Finished weekly workout files or their generation script
 - Trainer constraints, preferences, dislikes, and storage requirements
 
-Do not audit from the workbook alone when assessment or trainer context is available.
+Do not audit from the workout files alone when assessment or trainer context is available.
 
 ## Required Audit Checks
 
@@ -47,9 +47,9 @@ Do not audit from the workbook alone when assessment or trainer context is avail
 Confirm:
 
 - Intake readiness gate passed, or trainer explicitly approved assumptions
-- Program Blueprint exists before the workbook
+- Program Blueprint exists before the weekly workout files
 - Exercise choices align with the blueprint
-- Workbook was created after the design and selection gates
+- Weekly workout files were created after the design and selection gates
 
 ### 2. Client-Specific Fit
 
@@ -84,6 +84,8 @@ Confirm every session has:
 - A clear session goal and rationale
 - Realistic density for the stated session length
 
+Confirm the displayed `Total Time` equals the sum of main-table `Est Time` values. Add Warm Up and Cool Down estimates separately to verify the complete session envelope fits the client's available session length.
+
 For buddy sessions, confirm the program accounts for two-client logistics: shared equipment, station flow, coach attention, rest timing, and individual modifications where the clients differ.
 
 Warm-ups should follow the current `program-pal-program-design` rule unless the trainer explicitly overrides it:
@@ -103,20 +105,25 @@ Confirm:
 - Retest or tracking priorities are named when relevant
 - The trainer can tell how to progress, regress, or hold steady
 
-### 6. Workbook Quality
+### 6. Weekly File Quality
 
-Inspect the workbook or generation script for:
+Inspect every weekly workout file or the generation script for:
 
-- Correct client/program title
-- Overview and rationale sheet
-- Correct number of weeks and sessions
+- File name follows `ClientInitials ProgramVersion Week N.xlsx`
+- One file represents one client week
+- Correct client and program version
+- Correct number of day tabs for the scheduled sessions
+- Day tabs are named `Day 1`, `Day 2`, and so on
+- No default `Overview & Rationale` tab unless the trainer explicitly requested it
+- Every day tab includes Client Name, Day, Date, Total Time, Warm Up, Cool Down, and the main workout table
+- Main workout table uses `Exercise | Sets | Reps | Est Time | 3 key Points` unless the session genuinely requires adapted dose fields
 - No copied placeholder content
-- No empty session blocks or orphaned template sections
+- No empty day tabs, exercise rows, or orphaned template sections
 - Readable notes, wrapped text, and sensible row heights
 - Print-friendly layout when applicable
-- Consistent file name and program label
+- Consistent weekly naming and program version
 
-Render or open the workbook when visual layout risk is meaningful and tooling is available.
+Render or open every day tab when visual layout risk is meaningful and tooling is available.
 
 ### 7. Privacy And Storage Readiness
 
@@ -140,7 +147,7 @@ Include:
 
 - What was checked
 - Any minor assumptions the trainer should know
-- Final workbook path or expected upload name
+- Final weekly file paths or expected upload names
 
 ### Pass With Notes
 
@@ -160,6 +167,6 @@ Include:
 - Blocking issue
 - Why it matters
 - Exact fix needed
-- Whether the workbook should be regenerated
+- Whether one or more weekly files should be regenerated
 
-Do not upload a workbook to Google Drive after a `Blocked` audit unless the trainer explicitly approves uploading a known draft.
+Do not upload weekly workout files to Google Drive after a `Blocked` audit unless the trainer explicitly approves uploading a known draft.

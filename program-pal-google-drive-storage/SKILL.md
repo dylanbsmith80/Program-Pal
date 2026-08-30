@@ -1,13 +1,13 @@
 ---
 name: program-pal-google-drive-storage
-description: Use when Program Pal needs to save, upload, organize, or locate client assessment forms and generated workout programs in the trainer's Google Drive folder named Program pal using the required client-folder naming convention.
+description: Use when Program Pal needs to save, upload, organize, or locate client assessment forms and weekly workout files in the trainer's Google Drive folder named Program pal using the required client-folder and workout-file naming conventions.
 ---
 
 # Program Pal Google Drive Storage Skill
 
 Use this skill when storing Program Pal client files in Google Drive.
 
-This skill governs file organization only. It does not generate assessments, design programs, select exercises, or format Excel workbooks.
+This skill governs file organization only. It does not generate assessments, design programs, select exercises, or format workout spreadsheets.
 
 ## Storage Mechanism
 
@@ -37,20 +37,21 @@ Inside the Google Drive `Program pal` folder, each client gets one folder named:
 
 Examples:
 
-- `DylanS`
-- `MariaG`
-- `JordanT`
+- `SampleC`
+- `ExampleT`
+- `DemoP`
 
 Store all files directly inside the client folder:
 
 ```text
 ClientFolder/
   YYYY-MM-DD Assessment - ClientFolderName.ext
-  YYYY-MM-DD Program - ClientFolderName - ProgramLabel.ext
-  YYYY-MM-DD Program - ClientFolderName - Next Program Label.ext
+  ClientInitials 2.0 Week 1.xlsx
+  ClientInitials 2.0 Week 2.xlsx
+  ClientInitials 2.0 Week 3.xlsx
 ```
 
-Do not create `Assessments/`, `Programs/`, or other category subfolders unless the trainer explicitly asks for them. The current trainer-preferred layout is a flat client folder, as in `Program pal/DylanS/`.
+Do not create `Assessments/`, `Programs/`, or other category subfolders unless the trainer explicitly asks for them. The current trainer-preferred layout is a flat client folder, as in the placeholder path `Program pal/SampleC/`.
 
 ## Client Folder Naming Rules
 
@@ -69,22 +70,25 @@ Do not use full last names unless the trainer explicitly asks.
 
 ## File Naming Rules
 
-Use clear, date-prefixed file names.
+Use date-prefixed names for assessment files and the trainer's weekly convention for workout files.
 
 Assessment files:
 
 `YYYY-MM-DD Assessment - ClientFolderName.ext`
 
-Program files:
+Weekly workout files:
 
-`YYYY-MM-DD Program - ClientFolderName - ProgramLabel.ext`
+`ClientInitials ProgramVersion Week N.xlsx`
 
 Examples:
 
-- `2026-05-27 Assessment - DylanS.pdf`
-- `2026-05-27 Program - DylanS - 8 Week Strength Block.xlsx`
+- `2026-05-27 Assessment - SampleC.pdf`
+- `SC 2.0 Week 1.xlsx`
+- `ET 2.0 Week 2.xlsx`
 
-If there are multiple programs for the same client, keep all of them directly in the client folder with distinct dates or program labels.
+Use the trainer-provided program version. When the active convention is `2.0` and no different version is supplied, use `2.0`. Do not add a date prefix to weekly workout files unless the trainer explicitly requests one.
+
+Keep every weekly file directly in the client folder. Distinguish files by client initials, program version, and week number.
 
 ## Storage Workflow
 
@@ -96,13 +100,13 @@ When storing an assessment:
 4. Preserve the original assessment file unless the trainer explicitly asks to move or delete it.
 5. Verify the uploaded assessment appears directly in the client folder before reporting completion.
 
-When storing a generated workout workbook:
+When storing generated weekly workout files:
 
 1. Find or create the Google Drive root folder named `Program pal`.
 2. Create the client folder if it does not exist.
-3. Upload or copy the workbook directly into the client folder.
-4. Preserve the generated workspace copy unless the trainer explicitly asks to move or delete it.
-5. Verify the uploaded workbook appears directly in the client folder before reporting completion.
+3. Upload or copy each weekly file directly into the client folder.
+4. Preserve the generated workspace copies unless the trainer explicitly asks to move or delete them.
+5. Verify every uploaded weekly file appears directly in the client folder before reporting completion.
 
 ## Browser Fallback Workflow
 
@@ -111,9 +115,9 @@ Use this workflow when connector write actions are unavailable but the trainer's
 1. Open the `Program pal` Google Drive folder.
 2. Create the client folder using the required `FirstNameLastInitial` naming rule.
 3. Open the client folder.
-4. Rename or stage local files with the required date-prefixed file names before upload.
+4. Rename or stage assessments with the required date-prefixed name and weekly workout files with `ClientInitials ProgramVersion Week N.xlsx`.
 5. Upload the assessment file directly into the client folder.
-6. Upload the program workbook directly into the client folder.
+6. Upload every weekly workout file directly into the client folder.
 7. Use the Google Drive connector to list the client folder afterward when possible, confirming the final file names and links.
 
 ## Access And Permission Rules
@@ -135,7 +139,7 @@ After uploading or copying any assessment or workout program to Google Drive, re
 
 Include:
 
-- Drive folder: the final folder path, such as `Program pal/DylanS`.
+- Drive folder: the final folder path, such as the placeholder `Program pal/SampleC`.
 - Uploaded file name: the exact file name now visible in Drive.
 - Link: the Google Drive file link when available, or state `Unavailable` if the connector or browser flow cannot provide one.
 - Duplicate status: state whether no duplicate was found, an existing file was replaced, both files were kept, a versioned name was created, or upload was skipped because the trainer declined a duplicate action.
@@ -147,7 +151,7 @@ Use this format:
 Drive Upload Complete
 
 Drive folder: Program pal/ClientFolder
-Uploaded file: YYYY-MM-DD Program - ClientFolder - Program Label.xlsx
+Uploaded file: ClientInitials ProgramVersion Week N.xlsx
 Link: https://drive.google.com/...
 Duplicate status: No duplicate found; uploaded as a new file.
 Local copy preserved: Yes
@@ -168,6 +172,6 @@ Do not share, publish, rename, delete, or move client files outside the Google D
 Use this skill after:
 
 - `program-pal-initial-assessment` when an assessment file should be stored.
-- `personal-training-workbook-format` when a completed workbook should be stored.
+- `personal-training-workbook-format` when completed weekly workout files should be stored.
 
 This skill may also be used at the beginning of a client workflow to locate prior assessments or programs for that client.

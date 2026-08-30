@@ -17,13 +17,13 @@ Use `program-pal-initial-assessment` when working from client intake forms or eq
 
 Use `program-pal-intake-questions` before program design when required details may be missing. Program Pal must know sessions per week, session length, session format, difficulty rating, client goals, and client limitations before creating the final program.
 
-Use `program-pal-program-design` after assessment context is available and before creating the final workout workbook. This skill creates the Program Blueprint.
+Use `program-pal-program-design` after assessment context is available and before creating the weekly workout files. This skill creates the Program Blueprint.
 
 Use `program-pal-exercise-selection` when choosing, verifying, substituting, regressing, progressing, or explaining exercises inside a Program Pal workout.
 
-Use `personal-training-workbook-format` when creating or formatting final Excel workout-program workbooks.
+Use `personal-training-workbook-format` when creating or formatting weekly workout spreadsheets. Program Pal creates one file per client week and one training day per tab.
 
-Use `program-pal-program-audit` after the final workbook is created and before delivery or Google Drive storage. This is the final quality gate for client specificity, safety, time realism, workbook quality, and storage readiness.
+Use `program-pal-program-audit` after the weekly workout files are created and before delivery or Google Drive storage. This is the final quality gate for client specificity, safety, time realism, spreadsheet quality, and storage readiness.
 
 Use `program-pal-google-drive-storage` when storing assessment forms or finished workout programs in the trainer's Google Drive `Program pal` folder.
 
@@ -38,20 +38,22 @@ When creating a workout program from an assessment, Program Pal must complete th
 2. Intake readiness gate
    - Use `program-pal-intake-questions` before program design.
    - Program Pal must know sessions per week, session length, session format, difficulty rating, client goals, and client limitations.
-   - If any required item is missing or unclear, ask the trainer before creating the Program Blueprint or final workbook.
+   - If any required item is missing or unclear, ask the trainer before creating the Program Blueprint or weekly workout files.
    - Do not replace missing answers with assumptions unless the trainer explicitly approves those assumptions.
 
 3. Program Blueprint
    - Use `program-pal-program-design`.
-   - Summarize the chosen split, duration, phase logic, session goals, safety constraints, and tracking priorities before building the workbook.
+   - Summarize the chosen split, duration, phase logic, session goals, safety constraints, and tracking priorities before building the weekly files.
 
 4. Exercise selection
    - Use `program-pal-exercise-selection` whenever choosing, substituting, regressing, or progressing exercises.
    - Exercise choices must connect back to the Program Blueprint and client assessment.
 
-5. Workbook creation
+5. Weekly workout file creation
    - Use `personal-training-workbook-format`.
-   - Create the finished workbook only after the intake readiness gate and Program Blueprint are complete.
+   - Create one file per client week, named `ClientInitials ProgramVersion Week N.xlsx`.
+   - Create one training day per tab, named `Day 1`, `Day 2`, and so on.
+   - Create the finished weekly files only after the intake readiness gate and Program Blueprint are complete.
 
 6. Program audit
    - Use `program-pal-program-audit`.
@@ -61,7 +63,7 @@ When creating a workout program from an assessment, Program Pal must complete th
 7. Google Drive storage
    - Use `program-pal-google-drive-storage`.
    - Store the assessment PDF directly in `Program pal/ClientFolder/`.
-   - Store the finished workbook directly in `Program pal/ClientFolder/`.
+   - Store each finished weekly workout file directly in `Program pal/ClientFolder/`.
    - Do not create `Assessments/`, `Programs/`, or other category subfolders unless the trainer explicitly asks for them.
    - Preserve local copies.
    - If the Google Drive connector cannot create folders or upload files, use the browser or Chrome workflow with the user's authenticated Google Drive session. Do not silently stop at local files.
@@ -73,7 +75,7 @@ Before saying a program request is complete, verify and report:
 
 - Intake readiness gate passed, or the exact unanswered questions were asked.
 - Program audit result.
-- Final workbook path.
+- Final weekly workout file path or paths.
 - Google Drive assessment location and file name.
 - Google Drive program location and file name.
 - Any assumptions still requiring trainer review.

@@ -186,4 +186,4 @@ Use `references/exercise-entry-schema.md` when a structured exercise entry is ne
 
 ## Handoff
 
-After exercises are selected, pass the choices back to `program-pal-program-design` for blueprint coherence and then to `personal-training-workbook-format` when creating the final Excel workbook.
+After exercises are selected, pass the choices back to `program-pal-program-design` for blueprint coherence and then to `personal-training-workbook-format` when creating the weekly workout files.
