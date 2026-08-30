@@ -7,7 +7,7 @@ description: Use when Program Pal receives client assessment information in any 
 
 Use this skill to turn a client's initial assessment information into programming-ready context for Program Pal, regardless of the source medium or layout.
 
-This skill governs assessment interpretation, missing-information discovery, safety review, and programming input preparation. It does not format the final workout workbook. For workbook formatting, use `personal-training-workbook-format`.
+This skill governs assessment interpretation, missing-information discovery, safety review, and programming input preparation. It does not format the weekly workout files. For spreadsheet formatting, use `personal-training-workbook-format`.
 
 ## Source Reference
 
@@ -211,4 +211,4 @@ After assessment interpretation, Program Pal may create the workout program only
 
 Required programming-readiness fields with confidence `1 Unusable` or `2 Low` do not count as known. Safety-critical findings with confidence `1-3` must be clarified before program design proceeds unless the trainer explicitly approves conservative assumptions.
 
-When ready to build the workout workbook, combine this assessment brief with the Program Pal constitution in `PROGRAM_PAL_AGENT_OBJECTIVES.md` and the formatting rules in `personal-training-workbook-format`.
+When ready to build the weekly workout files, combine this assessment brief with the Program Pal constitution in `PROGRAM_PAL_AGENT_OBJECTIVES.md` and the formatting rules in `personal-training-workbook-format`.

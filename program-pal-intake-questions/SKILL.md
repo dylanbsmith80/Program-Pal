@@ -1,11 +1,11 @@
 ---
 name: program-pal-intake-questions
-description: Use after reviewing the assessment, intake notes, or trainer-provided context when Program Pal is still missing required client or program information before creating a Program Blueprint, exercise selections, or final workout workbook. This skill checks required inputs and asks focused follow-up questions only for unanswered items.
+description: Use after reviewing the assessment, intake notes, or trainer-provided context when Program Pal is still missing required client or program information before creating a Program Blueprint, exercise selections, or weekly workout files. This skill checks required inputs and asks focused follow-up questions only for unanswered items.
 ---
 
 # Program Pal Intake Questions Skill
 
-Use this skill before Program Pal designs a program, selects exercises, or creates a final workout workbook. Program Pal may still summarize an assessment before this gate, but it must pass this gate before creating the actual program.
+Use this skill before Program Pal designs a program, selects exercises, or creates weekly workout files. Program Pal may still summarize an assessment before this gate, but it must pass this gate before creating the actual program.
 
 This skill is a readiness gate. Its job is to confirm Program Pal has the minimum required information to build a safe, specific, client-centered program.
 
@@ -118,6 +118,6 @@ Once all six required items are known, hand off to `program-pal-program-design` 
 
 If exercise choices are needed, use `program-pal-exercise-selection` after the Program Blueprint has enough structure.
 
-Do not create the final Excel workbook until this readiness gate has passed.
+Do not create weekly workout files until this readiness gate has passed.
 
 The readiness gate has passed only when the output explicitly says `Ready For Program Design` and includes all six required items with acceptable confidence when scores are available. If the output says `Missing Required Information`, stop and ask the listed questions. Do not continue to program design, exercise selection, workbook generation, or Google Drive storage until the trainer answers or explicitly approves assumptions.
