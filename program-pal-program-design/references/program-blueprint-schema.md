@@ -50,6 +50,14 @@ If difficulty rating is unknown, ask before finalizing the blueprint.
 
 State the number of training sessions per week.
 
+### Facility And Floor Flow
+
+State the facility used for the program. Assume North Rec unless the trainer explicitly says South Rec, following the shared facility profile in `program-pal-client-memory/references/facility-profiles.md`.
+
+For North Rec, identify the intended floor sequence for each session when equipment placement affects execution. Group same-floor exercises into blocks, avoid cross-floor supersets and circuits, and explain any necessary floor change. For buddy sessions, make sure both clients can rotate within the planned floor or station cluster.
+
+If South Rec is specified, do not reuse North Rec equipment assumptions. Record what is known and ask for missing facility details when they materially affect the program.
+
 ### Chosen Split
 
 Name the split and explain why it best supports the client goals, schedule, and assessment findings.

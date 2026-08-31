@@ -19,6 +19,8 @@ Create the memory as a private Google Doc in the client's existing folder. Use `
 
 The Google Doc is the authoritative record. Do not store real client memory, exports, cached copies, or health details in GitHub. The repository contains only this reusable skill and its sanitized schema.
 
+Non-sensitive shared facility context is the exception to the client-record rule. Read [references/facility-profiles.md](references/facility-profiles.md) when location or equipment affects a response, intake decision, Program Blueprint, exercise choice, or session flow. Unless the trainer explicitly names South Rec, use the North Rec default documented there. Do not copy the full facility inventory into every client memory document; store only durable client-specific location or equipment exceptions in the private record.
+
 Do not change sharing permissions or generate a public link unless the trainer explicitly asks. If Drive access is unavailable, continue using facts supplied in the current task but report that persistent memory could not be read or updated. Do not silently substitute a repository file, Downloads folder, or another cloud provider.
 
 ## Identity Gate
@@ -45,6 +47,13 @@ Retrieve memory before:
 - revising an existing client program.
 
 Read the whole memory document. Use the current items most relevant to the task, including active goals, safety constraints, preferences, schedule, equipment, training history, open questions, and the most recent program status.
+
+After resolving the client's private memory, resolve facility context separately:
+
+- Use an explicit location stated for the current task when available.
+- Otherwise, apply the North Rec default from `references/facility-profiles.md`.
+- Treat facility availability as shared planning context, not proof that a specific exercise is suitable for the client.
+- When South Rec is explicitly named, do not import North Rec assumptions.
 
 Treat the memory as evidence, not unquestionable truth:
 
@@ -99,3 +108,5 @@ Report:
 - `Used:` the categories that materially affected the work;
 - `Updated:` the categories changed, or `None`; and
 - `Needs confirmation:` unresolved or stale facts that could change future programming.
+
+When facility context materially affects the work, also report `Facility used:` North Rec, South Rec, or Unknown.

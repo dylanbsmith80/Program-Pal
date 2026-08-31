@@ -27,6 +27,7 @@ Before finalizing a blueprint, Program Pal must know:
 - Difficulty rating on a 1-10 scale, with 10 being the most challenging
 - Program duration or goal timeline
 - Equipment access
+- Facility location and floor logistics when the session uses a known facility profile
 - Relevant assessment findings
 - Safety constraints, pain, injuries, or medical limitations
 - Exercise preferences and dislikes
@@ -44,6 +45,8 @@ Do not create weekly workout files until the blueprint has enough information to
 If the assessment brief includes confidence scores, respect them as source-certainty signals. Required readiness information must satisfy the `program-pal-intake-questions` confidence thresholds before blueprint creation.
 
 For buddy sessions, account for two-client logistics in the blueprint: shared equipment, station flow, exercise pairing, coaching bandwidth, rest timing, and individual regressions/progressions for each client when their needs differ.
+
+For Program Pal sessions, read the shared facility profile linked from `program-pal-client-memory/references/facility-profiles.md`. Assume North Rec unless the trainer explicitly specifies South Rec. Use the North Rec floor layout to group exercises into practical blocks, avoid cross-floor supersets or buddy rotations, and reduce unnecessary floor changes. If South Rec is specified, do not assume the North Rec inventory applies.
 
 ## Program Structure Rules
 
@@ -74,6 +77,8 @@ For common session lengths, use these rough defaults:
 Each session must have an overarching goal with a short rationale. The goal may be simple, such as "Work toward FMS squat level 3," but it must clearly connect to the client assessment, goals, or program phase.
 
 Place the most challenging, highest-priority work early in the session while the client has the most energy.
+
+Exercise order must also be executable in the facility. Prefer blocks that share a floor or nearby equipment. A floor change should be a deliberate transition between blocks rather than an accidental consequence of exercise ordering.
 
 Use these ordering principles:
 
@@ -188,5 +193,6 @@ The blueprint should make it clear:
 - What safety constraints shape the plan
 - Which uncertain safety or readiness findings shaped conservative choices, if any
 - What should be tracked to judge progress
+- Which facility and floor sequence the session assumes when location affects execution
 
 After the blueprint is complete and safe enough to proceed, use `personal-training-workbook-format` to create or format the weekly workout files.
