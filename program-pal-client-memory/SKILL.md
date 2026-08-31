@@ -19,7 +19,7 @@ Create the memory as a private Google Doc in the client's existing folder. Use `
 
 The Google Doc is the authoritative record. Do not store real client memory, exports, cached copies, or health details in GitHub. The repository contains only this reusable skill and its sanitized schema.
 
-Non-sensitive shared facility context is the exception to the client-record rule. Read [references/facility-profiles.md](references/facility-profiles.md) when location or equipment affects a response, intake decision, Program Blueprint, exercise choice, or session flow. Unless the trainer explicitly names South Rec, use the North Rec default documented there. Do not copy the full facility inventory into every client memory document; store only durable client-specific location or equipment exceptions in the private record.
+Non-sensitive shared context is the exception to the client-record rule. Read [references/facility-profiles.md](references/facility-profiles.md) when location or equipment affects a response, intake decision, Program Blueprint, exercise choice, or session flow. Read [references/trainer-programming-style.md](references/trainer-programming-style.md) before interpreting prior workouts or designing a program. Unless the trainer explicitly names South Rec, use the North Rec default documented in the facility profile. Do not copy shared facility or trainer-style defaults into every client memory document; store only durable client-specific exceptions in the private record.
 
 Do not change sharing permissions or generate a public link unless the trainer explicitly asks. If Drive access is unavailable, continue using facts supplied in the current task but report that persistent memory could not be read or updated. Do not silently substitute a repository file, Downloads folder, or another cloud provider.
 
@@ -32,6 +32,7 @@ Resolve the client before reading or writing memory.
 - If two clients could map to the same folder key, ask the trainer to disambiguate; do not guess.
 - Search for the memory document only inside the resolved client folder.
 - If more than one memory document exists there, do not merge or overwrite them until the trainer identifies the authoritative copy.
+- Treat `Program pal/DylanS/` as a test folder, not a client. Ignore it unless the trainer explicitly says the task is a test or explicitly asks to use that folder.
 
 Never combine facts from similar names, adjacent folders, search snippets, or another client's program.
 
@@ -54,6 +55,8 @@ After resolving the client's private memory, resolve facility context separately
 - Otherwise, apply the North Rec default from `references/facility-profiles.md`.
 - Treat facility availability as shared planning context, not proof that a specific exercise is suitable for the client.
 - When South Rec is explicitly named, do not import North Rec assumptions.
+
+Also apply the shared trainer-programming defaults from `references/trainer-programming-style.md`, then let the client's current private memory and the trainer's current instructions override those defaults where they differ.
 
 Treat the memory as evidence, not unquestionable truth:
 

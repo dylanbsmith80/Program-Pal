@@ -48,6 +48,8 @@ For buddy sessions, account for two-client logistics in the blueprint: shared eq
 
 For Program Pal sessions, read the shared facility profile linked from `program-pal-client-memory/references/facility-profiles.md`. Assume North Rec unless the trainer explicitly specifies South Rec. Use the North Rec floor layout to group exercises into practical blocks, avoid cross-floor supersets or buddy rotations, and reduce unnecessary floor changes. If South Rec is specified, do not assume the North Rec inventory applies.
 
+Read `program-pal-client-memory/references/trainer-programming-style.md` before finalizing the blueprint. Apply its rep, loading, session-density, and exercise-variety defaults only after client-specific memory and current trainer instructions have been considered.
+
 ## Program Structure Rules
 
 Every session must follow this top-level structure:
@@ -71,6 +73,8 @@ For common session lengths, use these rough defaults:
 - 30 minutes: 5-minute warm-up, 20-minute workout/conditioning block, 5-minute cooldown.
 - 45 minutes: 7-8-minute warm-up, 32-33-minute workout/conditioning block, 5-minute cooldown.
 - 60 minutes: 10-minute warm-up, 45-minute workout/conditioning block, 5-minute cooldown.
+
+The trainer prefers a full session and would rather have useful optional work than an under-filled plan. Budget the required work realistically, then include a clearly labeled `If time` movement or short block when client pace, rest, or equipment flow makes the exact finish uncertain. Do not use optional work to hide an unrealistic required time budget.
 
 ## Session Design Rules
 

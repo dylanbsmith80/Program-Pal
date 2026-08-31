@@ -58,6 +58,15 @@ For North Rec, identify the intended floor sequence for each session when equipm
 
 If South Rec is specified, do not reuse North Rec equipment assumptions. Record what is known and ask for missing facility details when they materially affect the program.
 
+### Trainer Style Application
+
+State how the blueprint applies the shared defaults in `program-pal-client-memory/references/trainer-programming-style.md`:
+
+- Use 8–12 reps as the normal working range unless the client, exercise, phase, or goal calls for another range.
+- Leave exact loads for live trainer selection unless a durable client baseline was confirmed.
+- Fill the scheduled session with realistic required work and a useful `If time` option when appropriate.
+- Choose repetition versus exercise variety from the client's preferences, progression needs, and training history rather than imposing novelty automatically.
+
 ### Chosen Split
 
 Name the split and explain why it best supports the client goals, schedule, and assessment findings.

@@ -17,6 +17,7 @@ Read these references when needed:
 - `references/exercise-entry-schema.md` for the structure Program Pal should use when describing or evaluating exercises.
 - `memory/private-exercise-history.md` when it exists locally, for private notes on exercises Program Pal has used before.
 - `memory/private-exercise-history.example.md` for the private exercise-history template.
+- `../program-pal-client-memory/references/trainer-programming-style.md` for the trainer's non-sensitive rep, loading, density, and variety defaults.
 
 The real private exercise history file is intentionally gitignored. Do not commit client-specific exercise history, sensitive client context, or identifiable client notes to the public repository.
 
@@ -25,12 +26,15 @@ The real private exercise history file is intentionally gitignored. Do not commi
 When selecting exercises:
 
 1. Start from the client assessment, goals, safety flags, preferences, equipment, and Program Blueprint.
-2. Identify the training purpose of each exercise slot.
-3. Prefer verified exercises from approved sources or the trainer's own approved notes.
-4. Match exercise difficulty to the client's ability, constraints, and session goal.
-5. Choose regressions or substitutions when pain, equipment, skill, preference, or safety requires it.
-6. Place the exercise in Warm Up, Workout, or Cooldown according to `program-pal-program-design`.
-7. Explain why the exercise fits when the choice is not obvious.
+2. Apply the trainer-programming defaults only where the client's private memory and current instructions do not establish a different rule.
+3. Identify the training purpose of each exercise slot.
+4. Prefer verified exercises from approved sources or the trainer's own approved notes.
+5. Match exercise difficulty to the client's ability, constraints, and session goal.
+6. Choose regressions or substitutions when pain, equipment, skill, preference, or safety requires it.
+7. Place the exercise in Warm Up, Workout, or Cooldown according to `program-pal-program-design`.
+8. Explain why the exercise fits when the choice is not obvious.
+
+As a trainer-style default, most working sets fall in the 8–12-rep range, exact loads are selected live when no durable baseline exists, and the desired amount of exercise variety depends on the client. These are defaults, not reasons to override a strength phase, a higher-rep exercise, a safety constraint, or a documented client preference.
 
 Do not select exercises just because they are popular, novel, or difficult.
 

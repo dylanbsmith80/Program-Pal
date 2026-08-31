@@ -36,6 +36,8 @@ When creating a workout program from an assessment, Program Pal must complete th
 0. Client memory
    - Use `program-pal-client-memory` to retrieve the correct client's private memory when it exists.
    - Read the shared facility profile in `program-pal-client-memory/references/facility-profiles.md`; assume North Rec unless the trainer explicitly says South Rec.
+   - Read the shared trainer defaults in `program-pal-client-memory/references/trainer-programming-style.md`; client memory and current trainer instructions override shared defaults.
+   - Ignore `Program pal/DylanS/` during normal client work; it is test-only unless the trainer explicitly says otherwise.
    - Reconcile current source material with prior goals, limitations, preferences, program history, progress, and open questions.
    - Update memory after durable trainer-confirmed facts or program milestones are established.
 
