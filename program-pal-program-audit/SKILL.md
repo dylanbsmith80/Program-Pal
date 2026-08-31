@@ -88,6 +88,8 @@ Confirm the displayed `Total Time` equals the sum of main-table `Est Time` value
 
 For buddy sessions, confirm the program accounts for two-client logistics: shared equipment, station flow, coach attention, rest timing, and individual modifications where the clients differ.
 
+For every repeated lettered block such as `A1`/`A2`, confirm that the movements use the same equipment or station. Same-floor placement alone does not pass this check. Unless the trainer explicitly approved an exception, separate movements that require walking to another machine, bench, cable tower, rack, or gym area into sequential blocks before delivery.
+
 Warm-ups should follow the current `program-pal-program-design` rule unless the trainer explicitly overrides it:
 
 - 1-2 temperature-raising dynamic movements
@@ -122,6 +124,7 @@ Inspect every weekly workout file or the generation script for:
 - Readable notes, wrapped text, and sensible row heights
 - Print-friendly layout when applicable
 - Consistent weekly naming and program version
+- Multi-exercise lettered blocks use one shared equipment setup or station, unless the trainer explicitly approved an exception
 
 Render or open every day tab when visual layout risk is meaningful and tooling is available.
 

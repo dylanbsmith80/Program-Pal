@@ -34,6 +34,8 @@ When selecting exercises:
 7. Place the exercise in Warm Up, Workout, or Cooldown according to `program-pal-program-design`.
 8. Explain why the exercise fits when the choice is not obvious.
 
+When selecting exercises for a paired lettered block, require both movements to use the same equipment or station. If they require different setups or walking to another area, keep the exercise choices but assign them to separate sequential blocks, or choose a same-equipment substitute that preserves the training purpose.
+
 As a trainer-style default, most working sets fall in the 8–12-rep range, exact loads are selected live when no durable baseline exists, and the desired amount of exercise variety depends on the client. These are defaults, not reasons to override a strength phase, a higher-rep exercise, a safety constraint, or a documented client preference.
 
 Do not select exercises just because they are popular, novel, or difficult.
@@ -144,7 +146,7 @@ When replacing an exercise, choose the first applicable reason and respond accor
 2. Equipment or facility missing: replace it with an option that uses available equipment, preserve the training purpose, and record the missing equipment or facility constraint in private history for future programs.
 3. Too hard or too technical: regress complexity, load, range of motion, stability demand, tempo, or volume while keeping the same goal.
 4. Disliked exercise: substitute a preferred or neutral option unless the exercise is essential; if it is essential, explain why and offer the closest tolerable variation.
-5. Too long or setup-heavy: choose a faster setup, simpler station flow, superset-compatible option, or lower-transition alternative that fits the session time budget.
+5. Too long or setup-heavy: choose a faster setup, simpler station flow, same-equipment superset option, or lower-transition alternative that fits the session time budget. Do not pair separate stations merely because they are on the same floor.
 6. Not goal-relevant: remove or replace it with an exercise that directly supports the session goal, program phase, or assessment finding.
 
 For equipment or facility replacements, do not only fix the current program. Carry the lesson forward in `memory/private-exercise-history.md` so Program Pal avoids repeatedly programming unavailable options.

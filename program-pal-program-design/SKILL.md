@@ -46,7 +46,7 @@ If the assessment brief includes confidence scores, respect them as source-certa
 
 For buddy sessions, account for two-client logistics in the blueprint: shared equipment, station flow, exercise pairing, coaching bandwidth, rest timing, and individual regressions/progressions for each client when their needs differ.
 
-For Program Pal sessions, read the shared facility profile linked from `program-pal-client-memory/references/facility-profiles.md`. Assume North Rec unless the trainer explicitly specifies South Rec. Use the North Rec floor layout to group exercises into practical blocks, avoid cross-floor supersets or buddy rotations, and reduce unnecessary floor changes. If South Rec is specified, do not assume the North Rec inventory applies.
+For Program Pal sessions, read the shared facility profile linked from `program-pal-client-memory/references/facility-profiles.md`. Assume North Rec unless the trainer explicitly specifies South Rec. Use the North Rec floor layout to order exercises efficiently and reduce unnecessary floor changes. Do not place multiple movements in one lettered block unless they share the same equipment or station; same-floor proximity alone is insufficient. If South Rec is specified, do not assume the North Rec inventory applies.
 
 Read `program-pal-client-memory/references/trainer-programming-style.md` before finalizing the blueprint. Apply its rep, loading, session-density, and exercise-variety defaults only after client-specific memory and current trainer instructions have been considered.
 
@@ -84,7 +84,7 @@ Each session must have an overarching goal with a short rationale. The goal may 
 
 Place the most challenging, highest-priority work early in the session while the client has the most energy.
 
-Exercise order must also be executable in the facility. Prefer blocks that share a floor or nearby equipment. A floor change should be a deliberate transition between blocks rather than an accidental consequence of exercise ordering.
+Exercise order must also be executable in the facility. Order sequential blocks to minimize travel, and make each floor change a deliberate transition. Within a lettered block, pair movements only when they use the same equipment or station. Put movements requiring distinct setups or walking into separate blocks, even if they are on the same floor.
 
 Use these ordering principles:
 

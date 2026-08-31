@@ -159,6 +159,13 @@ The formatting system must support:
 
 Keep related movements adjacent. Explain pairing, station flow, or rest rules briefly in `3 key Points`. Do not add empty tabs or placeholder rows merely to match the reference asset.
 
+## Lettered Block Labels
+
+- Labels such as `A1` and `A2` indicate movements performed in the same block or superset. Use `A1` alone when the block contains only one movement.
+- Put multiple exercises under the same letter only when they use the same equipment or station.
+- If exercises require different machines, benches, cable towers, racks, or gym areas, give them different sequential letters even when they are located on the same floor.
+- Do not use shared letters only to show that exercises are related. The labels must describe an executable session flow.
+
 ## Verification
 
 Before delivery or Google Drive storage:
@@ -173,6 +180,7 @@ Before delivery or Google Drive storage:
 - Confirm long notes are wrapped and visible.
 - Confirm no important text is clipped and no empty template blocks remain.
 - Confirm formulas contain no spreadsheet errors.
+- Confirm every multi-exercise lettered block uses one shared equipment setup or station, unless the trainer explicitly approved an exception.
 
 ## Final Workbook Inspection Gate
 

@@ -21,6 +21,14 @@ Source: trainer follow-up after reviewing existing workouts, 2026-08-30.
 - Time estimates must still be realistic about coaching, setup, equipment transitions, rest, and client pace.
 - A client-specific slower pace, longer rest need, fixed warm-up, or other known session pattern overrides the general density default.
 
+## Lettered Blocks And Supersets
+
+- Treat repeated letter labels such as `A1` and `A2` as one paired block or superset. A standalone movement should normally receive its own lettered block.
+- As the trainer-wide default, put multiple movements in the same lettered block only when both use the same equipment or station.
+- Being on the same floor is not enough. If the movements require walking to another machine, bench, cable tower, rack, or area, program them as separate sequential blocks.
+- Do not create a superset merely to increase density. Account for setup changes, equipment availability, coaching attention, and practical gym traffic.
+- Depart from this rule only when the trainer explicitly requests the pairing for that workout.
+
 ## Exercise Variety
 
 - The desired amount of variety is client-specific; do not apply one universal novelty rule.

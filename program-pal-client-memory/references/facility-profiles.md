@@ -77,8 +77,9 @@ Programming rules:
 
 ## Session-Flow Guidance
 
-- Put exercises sharing equipment or floor space into the same block.
-- Avoid supersets whose stations are on different floors.
+- Use the same lettered block for multiple movements only when they share the same equipment or station. Same-floor proximity by itself does not make a pairing practical.
+- If two movements require different machines, benches, cable towers, racks, or gym areas, place them in separate sequential blocks even when both are on the same floor.
+- Never program a cross-floor superset, circuit pairing, or buddy rotation unless the trainer explicitly requests it.
 - For buddy sessions, confirm both participants can rotate within the same floor or station cluster without losing meaningful work time.
 - A common North Rec flow may begin with heavy strength on the first floor, move to second-floor machine accessories if needed, and finish with third-floor core or mobility. This is an option, not a required template.
 - Prefer a same-floor substitute when changing floors would add more disruption than programming value.

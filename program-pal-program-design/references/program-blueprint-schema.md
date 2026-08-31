@@ -54,7 +54,7 @@ State the number of training sessions per week.
 
 State the facility used for the program. Assume North Rec unless the trainer explicitly says South Rec, following the shared facility profile in `program-pal-client-memory/references/facility-profiles.md`.
 
-For North Rec, identify the intended floor sequence for each session when equipment placement affects execution. Group same-floor exercises into blocks, avoid cross-floor supersets and circuits, and explain any necessary floor change. For buddy sessions, make sure both clients can rotate within the planned floor or station cluster.
+For North Rec, identify the intended floor sequence for each session when equipment placement affects execution. Order sequential blocks to reduce floor changes. Use one lettered block for multiple movements only when they share the same equipment or station; do not treat same-floor proximity as enough for a superset. Explain any necessary floor change. For buddy sessions, make sure both clients can use the planned station without impractical travel or setup changes.
 
 If South Rec is specified, do not reuse North Rec equipment assumptions. Record what is known and ask for missing facility details when they materially affect the program.
 
@@ -66,6 +66,7 @@ State how the blueprint applies the shared defaults in `program-pal-client-memor
 - Leave exact loads for live trainer selection unless a durable client baseline was confirmed.
 - Fill the scheduled session with realistic required work and a useful `If time` option when appropriate.
 - Choose repetition versus exercise variety from the client's preferences, progression needs, and training history rather than imposing novelty automatically.
+- Keep separate-equipment movements in separate lettered blocks unless the trainer explicitly requests a pairing.
 
 ### Chosen Split
 
