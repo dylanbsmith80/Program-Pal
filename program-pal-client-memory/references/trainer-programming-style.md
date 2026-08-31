@@ -35,6 +35,14 @@ Source: trainer follow-up after reviewing existing workouts, 2026-08-30.
 - Trainer shorthand in an older workbook may describe a familiar local exercise or machine. Resolve unclear shorthand before carrying it into a new client-facing file.
 - When a program is created but not yet performed, keep its status `planned` rather than using it as evidence of tolerance or progress.
 
+## Feedback Learning Rule
+
+- Invite a brief trainer rating and explanation after each new or materially revised workout.
+- Use post-session outcomes to decide what to repeat, change, progress, regress, or retest in the next workout.
+- Keep one-off observations at the workout or session level unless the trainer confirms a durable lesson.
+- Add a new trainer-wide default to this file only when the trainer explicitly says it applies broadly. Repeated similar feedback across at least three distinct clients may trigger a confirmation question, but is not automatic authorization to promote the rule.
+- Never place client ratings, health details, or identifiable program outcomes in GitHub.
+
 ## Test Folder Rule
 
 - `Program pal/DylanS/` is a test folder, not a client record.

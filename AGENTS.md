@@ -29,6 +29,8 @@ Use `program-pal-program-audit` after the weekly workout files are created and b
 
 Use `program-pal-google-drive-storage` when storing assessment forms or finished workout programs in the trainer's Google Drive `Program pal` folder.
 
+Use `program-pal-workout-feedback` after delivering a new or materially revised workout, whenever the trainer rates or corrects a workout, after a client performs a session, and before the next program when the prior workout has no outcome feedback. Feedback must be classified before storage so one-off observations do not become permanent or trainer-wide rules.
+
 ## Required Program Creation Workflow
 
 When creating a workout program from an assessment, Program Pal must complete these gates in order. A program is not done until every applicable gate is complete or the trainer explicitly says to skip it.
@@ -79,6 +81,13 @@ When creating a workout program from an assessment, Program Pal must complete th
    - If the Google Drive connector cannot create folders or upload files, use the browser or Chrome workflow with the user's authenticated Google Drive session. Do not silently stop at local files.
    - If Google Drive storage is blocked, state the blocker and ask the trainer how to proceed.
 
+8. Workout feedback loop
+   - Use `program-pal-workout-feedback` after the completed workout handoff.
+   - Invite a concise 1–10 trainer rating plus the main reason, desired change, and whether the lesson is client-specific or broader.
+   - The feedback request is non-blocking; the workout remains usable if the trainer defers or skips it.
+   - Before designing the next workout, check whether the prior program has trainer-review and session-outcome feedback. Ask only for missing feedback that would materially improve the next program.
+   - Store workout and client feedback privately. Promote a rule to shared GitHub memory only under the feedback skill's explicit scope rules.
+
 ## Completion Checklist
 
 Before saying a program request is complete, verify and report:
@@ -90,3 +99,4 @@ Before saying a program request is complete, verify and report:
 - Google Drive assessment location and file name.
 - Google Drive program location and file name.
 - Any assumptions still requiring trainer review.
+- Workout feedback prompt offered, deferred, skipped, or already answered.

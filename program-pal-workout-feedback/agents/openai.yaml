@@ -1,0 +1,7 @@
+interface:
+  display_name: "Program Pal Workout Feedback"
+  short_description: "Learn from trainer reviews and session outcomes"
+  default_prompt: "Use $program-pal-workout-feedback to record this workout feedback and improve the client’s next program."
+
+policy:
+  allow_implicit_invocation: true

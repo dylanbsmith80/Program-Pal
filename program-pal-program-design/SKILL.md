@@ -50,6 +50,8 @@ For Program Pal sessions, read the shared facility profile linked from `program-
 
 Read `program-pal-client-memory/references/trainer-programming-style.md` before finalizing the blueprint. Apply its rep, loading, session-density, and exercise-variety defaults only after client-specific memory and current trainer instructions have been considered.
 
+When a prior workout exists, use its trainer review and completed-session feedback from private client memory. State which prior elements are being repeated or changed and connect meaningful changes to the recorded feedback. If outcome feedback is missing, use `program-pal-workout-feedback` to ask only for information that could materially affect the next program; allow the trainer to defer unless safety is unresolved.
+
 ## Program Structure Rules
 
 Every session must follow this top-level structure:

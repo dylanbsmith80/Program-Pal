@@ -47,6 +47,8 @@ Retrieve memory before:
 - interpreting a progress update; or
 - revising an existing client program.
 
+When the client has prior programs, also retrieve the latest `Workout Feedback`, `Recent Progress`, and program status. Use `program-pal-workout-feedback` when review feedback or session outcomes are supplied or materially missing before the next program.
+
 Read the whole memory document. Use the current items most relevant to the task, including active goals, safety constraints, preferences, schedule, equipment, training history, open questions, and the most recent program status.
 
 After resolving the client's private memory, resolve facility context separately:
@@ -78,6 +80,8 @@ Update memory when a task produces durable client facts, such as:
 - an approved Program Blueprint or programming decision;
 - a program that has been prescribed, started, paused, or completed; or
 - an unresolved question that should be asked next time.
+
+Use the workout-feedback skill to classify ratings, requested edits, observed session outcomes, and possible broader lessons before updating memory. Keep workout-specific feedback under `Workout Feedback`, one-session observations under `Recent Progress`, and only confirmed durable client rules in the standing profile sections.
 
 Do not save model guesses, research claims, speculative diagnoses, or unapproved recommendations as client facts. Distinguish `planned`, `prescribed`, `in progress`, and `completed`; creating a workout file does not prove the client completed it.
 

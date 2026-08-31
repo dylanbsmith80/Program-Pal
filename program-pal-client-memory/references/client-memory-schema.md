@@ -52,6 +52,10 @@ Memory status: Active
 
 - YYYY-MM-DD — Decision and concise rationale; trainer-approved, source, or pending review
 
+## Workout Feedback
+
+- YYYY-MM-DD — Program/version; stage (trainer review or session outcome); rating when supplied; what to keep; what to change; reason; scope; source
+
 ## Recent Progress
 
 - YYYY-MM-DD — Observable result, adherence note, client feedback, or trainer observation; source
@@ -82,5 +86,7 @@ Do not use a source label that implies a document was reviewed when it was not.
 - Append progress, program milestones, and decisions chronologically.
 - Use `Unknown` instead of guessing.
 - Keep safety constraints active until explicitly cleared or superseded by an appropriate source.
+- Keep a created or trainer-reviewed workout `planned` or `prescribed` until session completion is explicitly confirmed.
+- Store one-off feedback without silently promoting it to a durable client rule. Follow `program-pal-workout-feedback` for client-wide, trainer-wide, and facility-wide promotion.
 - Mark a fact `Needs confirmation` when it is old or conflicts with a newer source.
 - Summarize repetitive history rather than letting the document grow without bound, but retain safety-critical history and program outcomes.
